@@ -11,10 +11,11 @@ services:
       - '3001:3000'
     volumes:
       - ./grafana/dashboard.yaml:/etc/grafana/provisioning/dashboards/main.yaml
-      - ./grafana/datasource.yaml:/etc/grafana/provisioning/datasource/main.yaml
+      - ./grafana/datasource.yaml:/etc/grafana/provisioning/datasources/main.yaml
       - ./grafana/dashboards:/var/lib/grafana/dashboards
       - ./grafana-lib:/var/lib/grafana
       - ./grafana-log:/var/log/grafana
       - ./grafana/grafana.ini:/etc/grafana/grafana.ini:ro
+      - ./test102023.db:/burstcube/test102023.db
 #volumes:
 #  grafana_storage: {}
