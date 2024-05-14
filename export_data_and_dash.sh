@@ -3,7 +3,7 @@
 
 # SOURCE VARIABLES
 #export token=xxxxx#admin token
-export grafanaurl=http://admin:admin@localhost:3000/api
+export grafanaurl=http://user:1234@localhost:3001/api
 
 
 rm -rf backups
