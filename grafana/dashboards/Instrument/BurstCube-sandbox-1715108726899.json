@@ -1,7 +1,7 @@
 {
   "__inputs": [
     {
-      "name": "DS_BURSTCUBE-TEST",
+      "name": "burstcube-test",
       "label": "burstcube-test",
       "description": "",
       "type": "datasource",
@@ -68,7 +68,7 @@
     {
       "datasource": {
         "type": "frser-sqlite-datasource",
-        "uid": "${DS_BURSTCUBE-TEST}"
+        "name": "burstcube-test"
       },
       "description": "BurstCube C&DH photon coutns",
       "fieldConfig": {
@@ -148,7 +148,7 @@
         {
           "datasource": {
             "type": "frser-sqlite-datasource",
-            "uid": "${DS_BURSTCUBE-TEST}"
+            "name": "burstcube-test"
           },
           "queryText": "SELECT TIME, BC_CNDH_0x1B_PHOT_CNT_0, BC_CNDH_0x1C_PHOT_CNT_1, BC_CNDH_0x1D_PHOT_CNT_2, BC_CNDH_0x1E_PHOT_CNT_3 FROM fast_ihk ORDER BY TIME ASC",
           "queryType": "table",
@@ -167,7 +167,7 @@
     {
       "datasource": {
         "type": "frser-sqlite-datasource",
-        "uid": "${DS_BURSTCUBE-TEST}"
+        "name": "burstcube-test"
       },
       "description": "",
       "fieldConfig": {
@@ -252,7 +252,7 @@
         {
           "datasource": {
             "type": "frser-sqlite-datasource",
-            "uid": "${DS_BURSTCUBE-TEST}"
+            "name": "burstcube-test"
           },
           "queryText": "select TIME as time, IDATA_DET_3,\nIDATA_DET_2,\nIDATA_DET_1,\nIDATA_DET_0 from fast_ihk",
           "queryType": "table",
@@ -283,7 +283,7 @@
     {
       "datasource": {
         "type": "frser-sqlite-datasource",
-        "uid": "${DS_BURSTCUBE-TEST}"
+        "name": "burstcube-test"
       },
       "description": "",
       "fieldConfig": {
@@ -392,7 +392,7 @@
         {
           "datasource": {
             "type": "frser-sqlite-datasource",
-            "uid": "${DS_BURSTCUBE-TEST}"
+            "name": "burstcube-test"
           },
           "queryText": "select BC_CNDH_0x0_VBIAS_0,\nBC_CNDH_0x1_VBIAS_1,\nBC_CNDH_0x2_VBIAS_2,\nBC_CNDH_0x3_VBIAS_3, TIME as time\n from fast_ihk",
           "queryType": "time series",
@@ -406,7 +406,7 @@
         {
           "datasource": {
             "type": "frser-sqlite-datasource",
-            "uid": "${DS_BURSTCUBE-TEST}"
+            "name": "burstcube-test"
           },
           "hide": false,
           "queryText": "select BC_CNDH_0x4_IBIAS_0,\nBC_CNDH_0x5_IBIAS_1,\nBC_CNDH_0x6_IBIAS_2,\nBC_CNDH_0x7_IBIAS_3, TIME as time\n from fast_ihk",
@@ -425,7 +425,7 @@
     {
       "datasource": {
         "type": "frser-sqlite-datasource",
-        "uid": "${DS_BURSTCUBE-TEST}"
+        "name": "burstcube-test"
       },
       "fieldConfig": {
         "defaults": {
@@ -499,7 +499,7 @@
         {
           "datasource": {
             "type": "frser-sqlite-datasource",
-            "uid": "${DS_BURSTCUBE-TEST}"
+            "name": "burstcube-test"
           },
           "queryText": "select TIME as time, BC_CNDH_0x20_BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 from fast_ihk",
           "queryType": "time series",
@@ -517,7 +517,7 @@
     {
       "datasource": {
         "type": "frser-sqlite-datasource",
-        "uid": "${DS_BURSTCUBE-TEST}"
+        "name": "burstcube-test"
       },
       "fieldConfig": {
         "defaults": {
@@ -599,7 +599,7 @@
         {
           "datasource": {
             "type": "frser-sqlite-datasource",
-            "uid": "${DS_BURSTCUBE-TEST}"
+            "name": "burstcube-test"
           },
           "queryText": "SELECT TIME as time, \nTINT_IDATA_nphot_recv_DET_0,\nTINT_IDATA_nphot_recv_DET_1,\nTINT_IDATA_nphot_recv_DET_2,\nTINT_IDATA_nphot_recv_DET_3\nFROM fast_ihk ",
           "queryType": "table",
@@ -617,7 +617,7 @@
     {
       "datasource": {
         "type": "frser-sqlite-datasource",
-        "uid": "${DS_BURSTCUBE-TEST}"
+        "name": "burstcube-test"
       },
       "description": "",
       "fieldConfig": {
@@ -668,7 +668,7 @@
         {
           "datasource": {
             "type": "frser-sqlite-datasource",
-            "uid": "${DS_BURSTCUBE-TEST}"
+            "name": "burstcube-test"
           },
           "queryText": "select TIME as time, TTE_STORE_MISSED_MSGS, TTE_STORE_MISSED_BLOCKS from fast_ihk",
           "queryType": "table",

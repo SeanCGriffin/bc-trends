@@ -8,6 +8,7 @@ deleteDatasources:
 
 datasources:
 - name: burstcube-test
+  uid: ${BURSTCUBE_DATASOURCE_UID}
   type: frser-sqlite-datasource
   typeLogoUrl: public/plugins/frser-sqlite-datasource/img/logo.svg
   access: proxy
@@ -20,7 +21,7 @@ datasources:
   isDefault: true
   jsonData:
     attachLimit: 0
-    path: /burstcube/test102023.db
+    path: /burstcube/burstcube_datasource.db
     pathPrefix: "file:" 
     secureJsonFields: null
   version: 6

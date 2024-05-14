@@ -7,6 +7,7 @@ services:
     environment:
       - GF_SERVER_ROOT_URL=http://my.grafana.server/
       - GF_INSTALL_PLUGINS=grafana-clock-panel, frser-sqlite-datasource, lucasbremond-satellitevisualizer-panel, flaminggoat-maptrack3d-panel
+      - BURSTCUBE_DATASOURCE_UID=lmnopqrstuv
     ports:
       - '3001:3000'
     volumes:
@@ -16,6 +17,7 @@ services:
       - ./grafana-lib:/var/lib/grafana
       - ./grafana-log:/var/log/grafana
       - ./grafana/grafana.ini:/etc/grafana/grafana.ini:ro
-      - ./test102023.db:/burstcube/test102023.db
+      # - ./test102023.db:/burstcube/test102023.db
+      - ./${BURSTCUBE_DATASOURCE}:/burstcube/burstcube_datasource.db
 #volumes:
 #  grafana_storage: {}
