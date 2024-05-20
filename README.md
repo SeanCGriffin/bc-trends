@@ -1,4 +1,4 @@
-# bc_trends
+# bc-trends
 BurstCube telemetry trending dashboard. 
 
 ## Prerequisites
@@ -40,4 +40,3 @@ becomes
 
 Once you have made this change, copy the dashboard to `grafana/dashboards/<subdirectory>` and refresh your grafana window. 
 The new dashboard is now provisioned within grafana, and may be committed to Git. 
-
