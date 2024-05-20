@@ -15,10 +15,10 @@ services:
       - ./grafana/dashboard.yaml:/etc/grafana/provisioning/dashboards/main.yaml
       - ./grafana/datasource.yaml:/etc/grafana/provisioning/datasources/main.yaml
       - ./grafana/dashboards:/var/lib/grafana/dashboards
-      - ./grafana-lib:/var/lib/grafana
-      - ./grafana-log:/var/log/grafana
+      - grafana_storage:/var/lib/grafana
+      #- ./grafana-lib:/var/lib/grafana
+      #- ./grafana-log:/var/log/grafana
       - ./grafana/grafana.ini:/etc/grafana/grafana.ini:ro
-      # - ./test102023.db:/burstcube/test102023.db
-      - ./${BURSTCUBE_DATASOURCE}:/burstcube/burstcube_datasource.db
-#volumes:
-#  grafana_storage: {}
+      - ${BURSTCUBE_DATASOURCE}:/burstcube/burstcube_datasource.db
+volumes:
+  grafana_storage: {}
