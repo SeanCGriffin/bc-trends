@@ -1,0 +1,116 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 10,
+  "links": [],
+  "panels": [
+    {
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "title": "Counted Things",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "frser-sqlite-datasource",
+        "uid": "lmnopqrstuv"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 1
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.2",
+      "targets": [
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "queryText": "select \nTIME as time,\nTINT_CBD_nphot_recv_TOTAL as CBD_nphot_recv_TOTAL,\nTINT_IDATA_nphot_recv_TOTAL as IDATA_nphot_recv_TOTAL\nfrom slow_ihk",
+          "queryType": "table",
+          "rawQueryText": "select \nTIME as time,\nTINT_CBD_nphot_recv_TOTAL as CBD_nphot_recv_TOTAL,\nTINT_IDATA_nphot_recv_TOTAL as IDATA_nphot_recv_TOTAL\nfrom slow_ihk",
+          "refId": "A",
+          "timeColumns": [
+            "time",
+            "ts"
+          ]
+        }
+      ],
+      "title": "NPHOT_RECV_TOT",
+      "type": "stat"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 39,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "2035-10-16T23:58:26.918Z",
+    "to": "2035-10-17T00:38:26.154Z"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Slow IHK Example",
+  "uid": "fdmat6emf8e0wf",
+  "version": 4,
+  "weekStart": ""
+}

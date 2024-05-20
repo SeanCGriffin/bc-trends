@@ -665,8 +665,8 @@
     },
     "timepicker": {},
     "timezone": "browser",
-    "title": "BurstCube-sandbox",
-    "uid": "cdkf9zfpo2nlsd",
+    "title": "BurstCube-sandbox",    
+    "uid": null,
     "version": 16,
     "weekStart": ""
   }

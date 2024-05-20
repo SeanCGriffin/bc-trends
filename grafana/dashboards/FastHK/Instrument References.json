@@ -1,0 +1,1142 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "Splash Page for BurstCube Instrument",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 8,
+  "links": [],
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 3,
+      "panels": [],
+      "title": "Temperatures",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "frser-sqlite-datasource",
+        "uid": "lmnopqrstuv"
+      },
+      "description": "IDPU Temperature",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Temperature",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 1
+      },
+      "id": 6,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "queryText": "SELECT TIME as time, BC_CNDH_0xC_TEMP_IDPU_0 FROM fast_ihk ORDER BY TIME ASC",
+          "queryType": "table",
+          "rawQueryText": "SELECT TIME as time, BC_CNDH_0xC_TEMP_IDPU_0 FROM fast_ihk ORDER BY TIME ASC",
+          "refId": "A",
+          "timeColumns": [
+            "time",
+            "ts"
+          ]
+        }
+      ],
+      "title": "IDPU Temperatures",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "frser-sqlite-datasource",
+        "uid": "lmnopqrstuv"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "purple",
+                "value": null
+              },
+              {
+                "color": "blue",
+                "value": 10
+              },
+              {
+                "color": "green",
+                "value": 20
+              },
+              {
+                "color": "dark-red",
+                "value": 50
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 60
+              },
+              {
+                "color": "#EF843C",
+                "value": 70
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 2,
+        "x": 12,
+        "y": 1
+      },
+      "id": 5,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.2",
+      "targets": [
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "queryText": "SELECT TIME as time, BC_CNDH_0xC_TEMP_IDPU_0 FROM fast_ihk ORDER BY TIME ASC",
+          "queryType": "table",
+          "rawQueryText": "SELECT TIME as time, BC_CNDH_0xC_TEMP_IDPU_0 FROM fast_ihk ORDER BY TIME ASC",
+          "refId": "A",
+          "timeColumns": [
+            "time",
+            "ts"
+          ]
+        }
+      ],
+      "title": "IDUPU Temperature",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "frser-sqlite-datasource",
+        "uid": "lmnopqrstuv"
+      },
+      "description": "IDAB Temperratures",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Temperature",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 7
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "queryText": "SELECT TIME as time, BC_CNDH_0x8_TEMP_0 as D0, BC_CNDH_0x9_TEMP_1 as D1, BC_CNDH_0xA_TEMP_2 as D2, BC_CNDH_0xB_TEMP_3 as D3 FROM fast_ihk ORDER BY TIME ASC",
+          "queryType": "table",
+          "rawQueryText": "SELECT TIME as time, BC_CNDH_0x8_TEMP_0 as D0, BC_CNDH_0x9_TEMP_1 as D1, BC_CNDH_0xA_TEMP_2 as D2, BC_CNDH_0xB_TEMP_3 as D3 FROM fast_ihk ORDER BY TIME ASC",
+          "refId": "A",
+          "timeColumns": [
+            "time",
+            "ts"
+          ]
+        }
+      ],
+      "title": "IDAB Temperatures",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "frser-sqlite-datasource",
+        "uid": "lmnopqrstuv"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "purple",
+                "value": null
+              },
+              {
+                "color": "blue",
+                "value": 10
+              },
+              {
+                "color": "green",
+                "value": 20
+              },
+              {
+                "color": "dark-red",
+                "value": 50
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 60
+              },
+              {
+                "color": "#EF843C",
+                "value": 70
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 2,
+        "x": 12,
+        "y": 7
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.2",
+      "targets": [
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "queryText": "SELECT TIME as time, BC_CNDH_0x8_TEMP_0 as D0, BC_CNDH_0x9_TEMP_1 as D1, BC_CNDH_0xA_TEMP_2 as D2, BC_CNDH_0xB_TEMP_3 as D3 FROM fast_ihk ORDER BY TIME ASC",
+          "queryType": "table",
+          "rawQueryText": "SELECT TIME as time, BC_CNDH_0x8_TEMP_0 as D0, BC_CNDH_0x9_TEMP_1 as D1, BC_CNDH_0xA_TEMP_2 as D2, BC_CNDH_0xB_TEMP_3 as D3 FROM fast_ihk ORDER BY TIME ASC",
+          "refId": "A",
+          "timeColumns": [
+            "time",
+            "ts"
+          ]
+        }
+      ],
+      "title": "IDAB Temperature",
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 13
+      },
+      "id": 7,
+      "panels": [
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "Voltage",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "volt"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 12,
+            "x": 0,
+            "y": 14
+          },
+          "id": 8,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "frser-sqlite-datasource",
+                "uid": "lmnopqrstuv"
+              },
+              "queryText": "select TIME as time, \nBC_CNDH_0x0_VBIAS_0 as D0,\nBC_CNDH_0x1_VBIAS_1 as D1,\nBC_CNDH_0x2_VBIAS_2 as D2,\nBC_CNDH_0x3_VBIAS_3 as D3 \n from fast_ihk",
+              "queryType": "table",
+              "rawQueryText": "select TIME as time, \nBC_CNDH_0x0_VBIAS_0 as D0,\nBC_CNDH_0x1_VBIAS_1 as D1,\nBC_CNDH_0x2_VBIAS_2 as D2,\nBC_CNDH_0x3_VBIAS_3 as D3 \n from fast_ihk",
+              "refId": "A",
+              "timeColumns": [
+                "time",
+                "ts"
+              ]
+            }
+          ],
+          "title": "IDAB V_bias",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "purple",
+                    "value": null
+                  },
+                  {
+                    "color": "green",
+                    "value": 20
+                  },
+                  {
+                    "color": "dark-red",
+                    "value": 65
+                  }
+                ]
+              },
+              "unit": "none"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 2,
+            "x": 12,
+            "y": 14
+          },
+          "id": 10,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "10.4.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "frser-sqlite-datasource",
+                "uid": "lmnopqrstuv"
+              },
+              "queryText": "select TIME as time, \nBC_CNDH_0x0_VBIAS_0 as D0,\nBC_CNDH_0x1_VBIAS_1 as D1,\nBC_CNDH_0x2_VBIAS_2 as D2,\nBC_CNDH_0x3_VBIAS_3 as D3 \n from fast_ihk",
+              "queryType": "table",
+              "rawQueryText": "select TIME as time, \nBC_CNDH_0x0_VBIAS_0 as D0,\nBC_CNDH_0x1_VBIAS_1 as D1,\nBC_CNDH_0x2_VBIAS_2 as D2,\nBC_CNDH_0x3_VBIAS_3 as D3 \n from fast_ihk",
+              "refId": "A",
+              "timeColumns": [
+                "time",
+                "ts"
+              ]
+            }
+          ],
+          "title": "IDAB V_bias (V)",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "Current",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "mamp"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 12,
+            "x": 0,
+            "y": 20
+          },
+          "id": 9,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "timezone": [
+              "utc"
+            ],
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "frser-sqlite-datasource",
+                "uid": "lmnopqrstuv"
+              },
+              "queryText": "select TIME as time, \nBC_CNDH_0x4_IBIAS_0 / 1000 as D0,\nBC_CNDH_0x5_IBIAS_1 / 1000 as D1,\nBC_CNDH_0x6_IBIAS_2 / 1000 as D2,\nBC_CNDH_0x7_IBIAS_3 / 1000 as D3 \n from fast_ihk",
+              "queryType": "table",
+              "rawQueryText": "select TIME as time, \nBC_CNDH_0x4_IBIAS_0 / 1000 as D0,\nBC_CNDH_0x5_IBIAS_1 / 1000 as D1,\nBC_CNDH_0x6_IBIAS_2 / 1000 as D2,\nBC_CNDH_0x7_IBIAS_3 / 1000 as D3 \n from fast_ihk",
+              "refId": "A",
+              "timeColumns": [
+                "time",
+                "ts"
+              ]
+            }
+          ],
+          "title": "IDAB I_bias",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 12000
+                  }
+                ]
+              },
+              "unit": "short"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 2,
+            "x": 12,
+            "y": 20
+          },
+          "id": 11,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "10.4.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "frser-sqlite-datasource",
+                "uid": "lmnopqrstuv"
+              },
+              "queryText": "select TIME as time, \nBC_CNDH_0x4_IBIAS_0 / 1000 as D0,\nBC_CNDH_0x5_IBIAS_1 / 1000 as D1,\nBC_CNDH_0x6_IBIAS_2 / 1000 as D2,\nBC_CNDH_0x7_IBIAS_3 / 1000 as D3 \n from fast_ihk",
+              "queryType": "table",
+              "rawQueryText": "select TIME as time, \nBC_CNDH_0x4_IBIAS_0 / 1000 as D0,\nBC_CNDH_0x5_IBIAS_1 / 1000 as D1,\nBC_CNDH_0x6_IBIAS_2 / 1000 as D2,\nBC_CNDH_0x7_IBIAS_3 / 1000 as D3 \n from fast_ihk",
+              "refId": "A",
+              "timeColumns": [
+                "time",
+                "ts"
+              ]
+            }
+          ],
+          "title": "IDAB I_bias (mA)",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-GrYlRd"
+              },
+              "custom": {
+                "fillOpacity": 70,
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineWidth": 0,
+                "spanNulls": false
+              },
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "color": "red",
+                      "index": 0,
+                      "text": "OFF"
+                    },
+                    "1": {
+                      "color": "green",
+                      "index": 1,
+                      "text": "ON"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 13,
+            "w": 4,
+            "x": 0,
+            "y": 26
+          },
+          "id": 12,
+          "options": {
+            "alignValue": "left",
+            "legend": {
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "mergeValues": true,
+            "rowHeight": 0.9,
+            "showValue": "auto",
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "frser-sqlite-datasource",
+                "uid": "lmnopqrstuv"
+              },
+              "queryText": "select TIME as time, \nBC_CNDH_0x20_BIAS_RELAY_EN_3 as BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2 as BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1 as BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0 as BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN_0\nfrom fast_ihk",
+              "queryType": "table",
+              "rawQueryText": "select TIME as time, \nBC_CNDH_0x20_BIAS_RELAY_EN_3 as BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2 as BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1 as BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0 as BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN_0\nfrom fast_ihk",
+              "refId": "A",
+              "timeColumns": [
+                "time",
+                "ts"
+              ]
+            }
+          ],
+          "title": "BIAS RELAY/AMP STATUS",
+          "type": "state-timeline"
+        },
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "color": "red",
+                      "index": 1,
+                      "text": "OFF"
+                    },
+                    "1": {
+                      "color": "green",
+                      "index": 0,
+                      "text": "ON"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "short"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 13,
+            "w": 2,
+            "x": 4,
+            "y": 26
+          },
+          "id": 13,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "10.4.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "frser-sqlite-datasource",
+                "uid": "lmnopqrstuv"
+              },
+              "queryText": "select TIME as time, \nBC_CNDH_0x20_BIAS_RELAY_EN_3 as BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2 as BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1 as BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0 as BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN_0\nfrom fast_ihk",
+              "queryType": "table",
+              "rawQueryText": "select TIME as time, \nBC_CNDH_0x20_BIAS_RELAY_EN_3 as BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2 as BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1 as BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0 as BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN_0\nfrom fast_ihk",
+              "refId": "A",
+              "timeColumns": [
+                "time",
+                "ts"
+              ]
+            }
+          ],
+          "title": "BIAS RELAY/AMP STATUS",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "continuous-GrYlRd"
+              },
+              "custom": {
+                "fillOpacity": 70,
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineWidth": 0,
+                "spanNulls": false
+              },
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "color": "red",
+                      "index": 0,
+                      "text": "OFF"
+                    },
+                    "1": {
+                      "color": "green",
+                      "index": 1,
+                      "text": "ON"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 13,
+            "w": 4,
+            "x": 6,
+            "y": 26
+          },
+          "id": 15,
+          "options": {
+            "alignValue": "left",
+            "legend": {
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "mergeValues": true,
+            "rowHeight": 0.9,
+            "showValue": "auto",
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "10.4.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "frser-sqlite-datasource",
+                "uid": "lmnopqrstuv"
+              },
+              "queryText": "select TIME as time, IDATA_DET_3,\nIDATA_DET_2,\nIDATA_DET_1,\nIDATA_DET_0 from fast_ihk",
+              "queryType": "table",
+              "rawQueryText": "select TIME as time, IDATA_DET_3,\nIDATA_DET_2,\nIDATA_DET_1,\nIDATA_DET_0 from fast_ihk",
+              "refId": "A",
+              "timeColumns": [
+                "time",
+                "ts"
+              ]
+            }
+          ],
+          "title": "Detector Head Eanble",
+          "type": "state-timeline"
+        },
+        {
+          "datasource": {
+            "type": "frser-sqlite-datasource",
+            "uid": "lmnopqrstuv"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "color": "red",
+                      "index": 1,
+                      "text": "OFF"
+                    },
+                    "1": {
+                      "color": "green",
+                      "index": 0,
+                      "text": "ON"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "short"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 13,
+            "w": 2,
+            "x": 10,
+            "y": 26
+          },
+          "id": 16,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "textMode": "auto",
+            "wideLayout": true
+          },
+          "pluginVersion": "10.4.2",
+          "targets": [
+            {
+              "datasource": {
+                "type": "frser-sqlite-datasource",
+                "uid": "lmnopqrstuv"
+              },
+              "queryText": "select TIME as time, \nBC_CNDH_0x20_BIAS_RELAY_EN_3 as BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2 as BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1 as BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0 as BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN_0\nfrom fast_ihk",
+              "queryType": "table",
+              "rawQueryText": "select TIME as time, \nBC_CNDH_0x20_BIAS_RELAY_EN_3 as BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2 as BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1 as BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0 as BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN_0\nfrom fast_ihk",
+              "refId": "A",
+              "timeColumns": [
+                "time",
+                "ts"
+              ]
+            }
+          ],
+          "title": "Detector Head Enable",
+          "type": "stat"
+        }
+      ],
+      "title": "Power",
+      "type": "row"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 39,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "2035-10-16T22:49:46.110Z",
+    "to": "2035-10-17T00:38:28.119Z"
+  },
+  "timepicker": {},
+  "timezone": "utc",
+  "title": "Instrument References",
+  "uid": "ddmakyl0umqyob",
+  "version": 18,
+  "weekStart": ""
+}

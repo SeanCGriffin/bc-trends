@@ -12,7 +12,31 @@ BurstCube telemetry trending dashboard.
 - Open the BurstCube sandbox dashboard, you should see some empty plots. Play with the specified date range until you get to where you're doing.
 
 ## Provisioning New Dashboards
-Exact procedure for this TBD but in a nutshell, copy the JSON for the dashboard to a file in `$REPODIR/grafana/dashboards`. 
-You will need to change the `uid` field in any exported dashboard to `null` to allow Grafana to import it properly on refresh. 
-Note: The file structure here will be copied within Grafana, so you we can separate different dashboards by type, but this only works for **top level folders** 
-(i.e. nested folders do not nest). 
+
+**NOTE:** Dashboards are only semi-persistant. 
+Namely, they are persistent within the grafana docker volume, but need to be manually exported via `export_dashboards_datasource.sh` which will put all dashboards in a `backups` directory. 
+Grab the new dashboard, edit the JSON to change the `uid` of the dashboard to `null`. 
+
+Example tail of a dashboard JSON:
+``
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Instrument Things",
+  "uid": "cdkf9zfpo2nlsd",
+  "version": 5,
+  "weekStart": ""
+}
+``
+becomes
+``
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Instrument Things",
+  "uid": null,
+  "version": 5,
+  "weekStart": ""
+}
+``
+
+Once you have made this change, copy the dashboard to `grafana/dashboards/<subdirectory>` and refresh your grafana window. 
+The new dashboard is now provisioned within grafana, and may be committed to Git. 
