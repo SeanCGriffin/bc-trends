@@ -18,7 +18,7 @@ Namely, they are persistent within the grafana docker volume, but need to be man
 Grab the new dashboard, edit the JSON to change the `uid` of the dashboard to `null`. 
 
 Example tail of a dashboard JSON:
-``
+```
   "timepicker": {},
   "timezone": "browser",
   "title": "Instrument Things",
@@ -26,9 +26,9 @@ Example tail of a dashboard JSON:
   "version": 5,
   "weekStart": ""
 }
-``
+```
 becomes
-``
+```
   "timepicker": {},
   "timezone": "browser",
   "title": "Instrument Things",
@@ -36,7 +36,7 @@ becomes
   "version": 5,
   "weekStart": ""
 }
-``
+```
 
 Once you have made this change, copy the dashboard to `grafana/dashboards/<subdirectory>` and refresh your grafana window. 
 The new dashboard is now provisioned within grafana, and may be committed to Git. 
