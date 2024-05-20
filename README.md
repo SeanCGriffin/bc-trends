@@ -1,4 +1,4 @@
-# bc_trends
+# bc-trends
 BurstCube telemetry trending dashboard. 
 
 ## Prerequisites
@@ -13,4 +13,6 @@ BurstCube telemetry trending dashboard.
 
 ## Provisioning New Dashboards
 Exact procedure for this TBD but in a nutshell, copy the JSON for the dashboard to a file in `$REPODIR/grafana/dashboards`. 
-Note: The file structure here will be copied within Grafana, so you we can separate different dashboards by type.
+You will need to change the `uid` field in any exported dashboard to `null` to allow Grafana to import it properly on refresh. 
+Note: The file structure here will be copied within Grafana, so you we can separate different dashboards by type, but this only works for **top level folders** 
+(i.e. nested folders do not nest). 
