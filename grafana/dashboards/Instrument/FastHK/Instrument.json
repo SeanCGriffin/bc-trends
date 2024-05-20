@@ -15,7 +15,7 @@
         }
       ]
     },
-    "description": "BurstCube dashboard sandbox",
+    "description": "BurstCube Instrument Reference",
     "editable": true,
     "fiscalYearStartMonth": 0,
     "graphTooltip": 0,
@@ -665,7 +665,7 @@
     },
     "timepicker": {},
     "timezone": "browser",
-    "title": "BurstCube-sandbox",    
+    "title": "Instrument Power Things",
     "uid": null,
     "version": 16,
     "weekStart": ""
