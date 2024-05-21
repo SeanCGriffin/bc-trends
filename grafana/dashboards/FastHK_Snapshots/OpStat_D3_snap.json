@@ -1812,7 +1812,7 @@
     },
     "timepicker": {},
     "timezone": "utc",
-    "title": "Detector 3 Operational Status",
+    "title": "Detector 3 Operational Status Snapshot",
     "uid": null,
     "version": 5,
     "weekStart": ""
