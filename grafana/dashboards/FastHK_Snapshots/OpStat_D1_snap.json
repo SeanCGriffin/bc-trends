@@ -18,7 +18,7 @@
     "editable": true,
     "fiscalYearStartMonth": 0,
     "graphTooltip": 0,
-    "id": 18,
+    "id": 25,
     "links": [],
     "panels": [
       {
@@ -1654,7 +1654,7 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 3,
+          "w": 2,
           "x": 6,
           "y": 24
         },
@@ -1751,8 +1751,8 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 4,
-          "x": 9,
+          "w": 6,
+          "x": 8,
           "y": 24
         },
         "id": 27,
@@ -1812,8 +1812,8 @@
     },
     "timepicker": {},
     "timezone": "utc",
-    "title": "Detector 1 Operational Status Snapshot",
-    "uid": null,
-    "version": 1,
+    "title": "Detector 1 Operational Status Trends",
+    "uid": "admexg5jl4qgwf",
+    "version": 19,
     "weekStart": ""
   }
