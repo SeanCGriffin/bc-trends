@@ -1014,9 +1014,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as D0_VBIAS\nfrom fast_ihk",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as D2_VBIAS\nfrom fast_ihk",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as D0_VBIAS\nfrom fast_ihk",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as D2_VBIAS\nfrom fast_ihk",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1654,7 +1654,7 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 3,
+          "w": 2,
           "x": 6,
           "y": 24
         },
@@ -1752,7 +1752,7 @@
         "gridPos": {
           "h": 9,
           "w": 4,
-          "x": 9,
+          "x": 8,
           "y": 24
         },
         "id": 27,
@@ -1814,6 +1814,6 @@
     "timezone": "utc",
     "title": "Detector 2 Operational Status Snapshot",
     "uid": null,
-    "version": 2,
+    "version": 3,
     "weekStart": ""
   }

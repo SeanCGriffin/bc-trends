@@ -1654,7 +1654,7 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 3,
+          "w": 2,
           "x": 6,
           "y": 24
         },
@@ -1752,7 +1752,7 @@
         "gridPos": {
           "h": 9,
           "w": 4,
-          "x": 9,
+          "x": 8,
           "y": 24
         },
         "id": 27,
@@ -1814,6 +1814,6 @@
     "timezone": "utc",
     "title": "Detector 3 Operational Status Snapshot",
     "uid": null,
-    "version": 2,
+    "version": 4,
     "weekStart": ""
   }
