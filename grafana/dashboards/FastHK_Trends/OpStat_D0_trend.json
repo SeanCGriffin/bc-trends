@@ -18,16 +18,40 @@
     "editable": true,
     "fiscalYearStartMonth": 0,
     "graphTooltip": 0,
-    "id": 29,
     "links": [],
     "panels": [
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "lmnopqrstuv"
+        },
+        "description": "",
+        "gridPos": {
+          "h": 2,
+          "w": 20,
+          "x": 0,
+          "y": 0
+        },
+        "id": 40,
+        "options": {
+          "code": {
+            "language": "plaintext",
+            "showLineNumbers": false,
+            "showMiniMap": false
+          },
+          "content": "# Detector 0\n\n",
+          "mode": "markdown"
+        },
+        "pluginVersion": "10.4.2",
+        "type": "text"
+      },
       {
         "collapsed": false,
         "gridPos": {
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 0
+          "y": 2
         },
         "id": 16,
         "panels": [],
@@ -77,14 +101,14 @@
         },
         "gridPos": {
           "h": 4,
-          "w": 2,
+          "w": 3,
           "x": 0,
-          "y": 1
+          "y": 3
         },
         "id": 17,
         "options": {
-          "colorMode": "background",
-          "graphMode": "none",
+          "colorMode": "value",
+          "graphMode": "area",
           "justifyMode": "auto",
           "orientation": "auto",
           "reduceOptions": {
@@ -95,7 +119,6 @@
             "values": false
           },
           "showPercentChange": false,
-          "text": {},
           "textMode": "auto",
           "wideLayout": true
         },
@@ -127,41 +150,36 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "continuous-GrYlRd"
             },
             "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
+              "fillOpacity": 70,
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
                 "viz": false
               },
               "insertNulls": false,
-              "lineInterpolation": "stepAfter",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
+              "lineWidth": 0,
+              "spanNulls": false
             },
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "green",
+                    "index": 0,
+                    "text": "OK"
+                  },
+                  "1": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -182,16 +200,19 @@
           "h": 4,
           "w": 7,
           "x": 3,
-          "y": 1
+          "y": 3
         },
         "id": 29,
         "options": {
+          "alignValue": "left",
           "legend": {
-            "calcs": [],
             "displayMode": "list",
             "placement": "bottom",
             "showLegend": true
           },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
           "tooltip": {
             "mode": "single",
             "sort": "none"
@@ -215,7 +236,7 @@
           }
         ],
         "title": "OVERCURRENT",
-        "type": "timeseries"
+        "type": "state-timeline"
       },
       {
         "datasource": {
@@ -263,7 +284,7 @@
           "h": 4,
           "w": 3,
           "x": 10,
-          "y": 1
+          "y": 3
         },
         "id": 22,
         "options": {
@@ -311,41 +332,36 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "continuous-GrYlRd"
             },
             "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
+              "fillOpacity": 70,
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
                 "viz": false
               },
               "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
+              "lineWidth": 0,
+              "spanNulls": false
             },
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "green",
+                    "index": 0,
+                    "text": "OK"
+                  },
+                  "1": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -366,16 +382,19 @@
           "h": 4,
           "w": 7,
           "x": 13,
-          "y": 1
+          "y": 3
         },
         "id": 32,
         "options": {
+          "alignValue": "left",
           "legend": {
-            "calcs": [],
             "displayMode": "list",
             "placement": "bottom",
             "showLegend": true
           },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
           "tooltip": {
             "mode": "single",
             "sort": "none"
@@ -399,7 +418,7 @@
           }
         ],
         "title": "SCL_LO",
-        "type": "timeseries"
+        "type": "state-timeline"
       },
       {
         "datasource": {
@@ -430,7 +449,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -446,9 +466,9 @@
           "h": 4,
           "w": 3,
           "x": 0,
-          "y": 5
+          "y": 7
         },
-        "id": 18,
+        "id": 19,
         "options": {
           "colorMode": "value",
           "graphMode": "area",
@@ -494,41 +514,36 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "continuous-GrYlRd"
             },
             "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
+              "fillOpacity": 70,
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
                 "viz": false
               },
               "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
+              "lineWidth": 0,
+              "spanNulls": false
             },
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "green",
+                    "index": 0,
+                    "text": "OK"
+                  },
+                  "1": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -549,16 +564,19 @@
           "h": 4,
           "w": 7,
           "x": 3,
-          "y": 5
+          "y": 7
         },
         "id": 28,
         "options": {
+          "alignValue": "left",
           "legend": {
-            "calcs": [],
             "displayMode": "list",
             "placement": "bottom",
             "showLegend": true
           },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
           "tooltip": {
             "mode": "single",
             "sort": "none"
@@ -582,7 +600,7 @@
           }
         ],
         "title": "I2C Setup",
-        "type": "timeseries"
+        "type": "state-timeline"
       },
       {
         "datasource": {
@@ -613,7 +631,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -629,7 +648,7 @@
           "h": 4,
           "w": 3,
           "x": 10,
-          "y": 5
+          "y": 7
         },
         "id": 23,
         "options": {
@@ -677,41 +696,36 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "continuous-GrYlRd"
             },
             "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
+              "fillOpacity": 70,
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
                 "viz": false
               },
               "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
+              "lineWidth": 0,
+              "spanNulls": false
             },
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "green",
+                    "index": 0,
+                    "text": "OK"
+                  },
+                  "1": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -732,16 +746,19 @@
           "h": 4,
           "w": 7,
           "x": 13,
-          "y": 5
+          "y": 7
         },
         "id": 33,
         "options": {
+          "alignValue": "left",
           "legend": {
-            "calcs": [],
             "displayMode": "list",
             "placement": "bottom",
             "showLegend": true
           },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
           "tooltip": {
             "mode": "single",
             "sort": "none"
@@ -765,7 +782,7 @@
           }
         ],
         "title": "SCL_HI",
-        "type": "timeseries"
+        "type": "state-timeline"
       },
       {
         "datasource": {
@@ -796,7 +813,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -812,7 +830,7 @@
           "h": 4,
           "w": 3,
           "x": 0,
-          "y": 9
+          "y": 11
         },
         "id": 19,
         "options": {
@@ -860,41 +878,36 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "continuous-GrYlRd"
             },
             "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 25,
-              "gradientMode": "none",
+              "fillOpacity": 70,
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
                 "viz": false
               },
               "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "normal"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
+              "lineWidth": 0,
+              "spanNulls": false
             },
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "green",
+                    "index": 0,
+                    "text": "OK"
+                  },
+                  "1": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -915,16 +928,19 @@
           "h": 4,
           "w": 7,
           "x": 3,
-          "y": 9
+          "y": 11
         },
-        "id": 30,
+        "id": 36,
         "options": {
+          "alignValue": "left",
           "legend": {
-            "calcs": [],
             "displayMode": "list",
             "placement": "bottom",
             "showLegend": true
           },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
           "tooltip": {
             "mode": "single",
             "sort": "none"
@@ -948,7 +964,7 @@
           }
         ],
         "title": "I2C ADDR NOAK",
-        "type": "timeseries"
+        "type": "state-timeline"
       },
       {
         "datasource": {
@@ -979,7 +995,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -995,7 +1012,7 @@
           "h": 4,
           "w": 3,
           "x": 10,
-          "y": 9
+          "y": 11
         },
         "id": 24,
         "options": {
@@ -1043,41 +1060,36 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "continuous-GrYlRd"
             },
             "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
+              "fillOpacity": 70,
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
                 "viz": false
               },
               "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
+              "lineWidth": 0,
+              "spanNulls": false
             },
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "green",
+                    "index": 0,
+                    "text": "OK"
+                  },
+                  "1": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -1098,16 +1110,19 @@
           "h": 4,
           "w": 7,
           "x": 13,
-          "y": 9
+          "y": 11
         },
         "id": 34,
         "options": {
+          "alignValue": "left",
           "legend": {
-            "calcs": [],
             "displayMode": "list",
             "placement": "bottom",
             "showLegend": true
           },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
           "tooltip": {
             "mode": "single",
             "sort": "none"
@@ -1131,7 +1146,7 @@
           }
         ],
         "title": "SDA_LO",
-        "type": "timeseries"
+        "type": "state-timeline"
       },
       {
         "datasource": {
@@ -1162,7 +1177,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1178,7 +1194,7 @@
           "h": 4,
           "w": 3,
           "x": 0,
-          "y": 13
+          "y": 15
         },
         "id": 20,
         "options": {
@@ -1226,41 +1242,36 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "continuous-GrYlRd"
             },
             "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
+              "fillOpacity": 70,
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
                 "viz": false
               },
               "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
+              "lineWidth": 0,
+              "spanNulls": false
             },
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "green",
+                    "index": 0,
+                    "text": "OK"
+                  },
+                  "1": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -1281,16 +1292,19 @@
           "h": 4,
           "w": 7,
           "x": 3,
-          "y": 13
+          "y": 15
         },
-        "id": 31,
+        "id": 37,
         "options": {
+          "alignValue": "left",
           "legend": {
-            "calcs": [],
             "displayMode": "list",
             "placement": "bottom",
             "showLegend": true
           },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
           "tooltip": {
             "mode": "single",
             "sort": "none"
@@ -1314,7 +1328,7 @@
           }
         ],
         "title": "I2C DATA NOAK",
-        "type": "timeseries"
+        "type": "state-timeline"
       },
       {
         "datasource": {
@@ -1345,7 +1359,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1361,7 +1376,7 @@
           "h": 4,
           "w": 3,
           "x": 10,
-          "y": 13
+          "y": 15
         },
         "id": 25,
         "options": {
@@ -1409,41 +1424,36 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "continuous-GrYlRd"
             },
             "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
+              "fillOpacity": 70,
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
                 "viz": false
               },
               "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
+              "lineWidth": 0,
+              "spanNulls": false
             },
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "green",
+                    "index": 0,
+                    "text": "OK"
+                  },
+                  "1": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "ERROR"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -1464,16 +1474,19 @@
           "h": 4,
           "w": 7,
           "x": 13,
-          "y": 13
+          "y": 15
         },
         "id": 35,
         "options": {
+          "alignValue": "left",
           "legend": {
-            "calcs": [],
             "displayMode": "list",
             "placement": "bottom",
             "showLegend": true
           },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
           "tooltip": {
             "mode": "single",
             "sort": "none"
@@ -1497,7 +1510,7 @@
           }
         ],
         "title": "SDA_HI",
-        "type": "timeseries"
+        "type": "state-timeline"
       },
       {
         "collapsed": false,
@@ -1505,232 +1518,12 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 17
+          "y": 19
         },
         "id": 7,
         "panels": [],
         "title": "Operational Status",
         "type": "row"
-      },
-      {
-        "datasource": {
-          "type": "frser-sqlite-datasource",
-          "uid": "lmnopqrstuv"
-        },
-        "fieldConfig": {
-          "defaults": {
-            "mappings": [
-              {
-                "options": {
-                  "0": {
-                    "color": "dark-red",
-                    "index": 0,
-                    "text": "DISABLED"
-                  },
-                  "1": {
-                    "color": "green",
-                    "index": 3,
-                    "text": "ENABLED"
-                  },
-                  "10": {
-                    "color": "dark-red",
-                    "index": 1,
-                    "text": "INHIBITED"
-                  },
-                  "11": {
-                    "color": "green",
-                    "index": 4,
-                    "text": "CLEAR"
-                  },
-                  "20": {
-                    "color": "dark-red",
-                    "index": 2,
-                    "text": "OFF"
-                  },
-                  "21": {
-                    "color": "green",
-                    "index": 5,
-                    "text": "ON"
-                  }
-                },
-                "type": "value"
-              }
-            ],
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "green",
-                  "value": null
-                },
-                {
-                  "color": "red",
-                  "value": 80
-                }
-              ]
-            },
-            "unit": "short"
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 13,
-          "w": 2,
-          "x": 0,
-          "y": 18
-        },
-        "id": 1,
-        "options": {
-          "colorMode": "background",
-          "graphMode": "none",
-          "justifyMode": "center",
-          "orientation": "auto",
-          "reduceOptions": {
-            "calcs": [
-              "lastNotNull"
-            ],
-            "fields": "",
-            "values": false
-          },
-          "showPercentChange": false,
-          "text": {},
-          "textMode": "auto",
-          "wideLayout": true
-        },
-        "pluginVersion": "10.4.2",
-        "targets": [
-          {
-            "datasource": {
-              "type": "frser-sqlite-datasource",
-              "uid": "lmnopqrstuv"
-            },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk",
-            "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk",
-            "refId": "A",
-            "timeColumns": [
-              "time",
-              "ts"
-            ]
-          }
-        ],
-        "title": "Detector 0 SITREP",
-        "type": "stat"
-      },
-      {
-        "datasource": {
-          "type": "frser-sqlite-datasource",
-          "uid": "lmnopqrstuv"
-        },
-        "description": "Status of override and select flags.",
-        "fieldConfig": {
-          "defaults": {
-            "mappings": [
-              {
-                "options": {
-                  "0": {
-                    "color": "dark-red",
-                    "index": 0,
-                    "text": "NO"
-                  },
-                  "1": {
-                    "color": "green",
-                    "index": 4,
-                    "text": "YES"
-                  },
-                  "10": {
-                    "color": "dark-red",
-                    "index": 1,
-                    "text": "INHIBITED"
-                  },
-                  "11": {
-                    "color": "green",
-                    "index": 5,
-                    "text": "CLEAR"
-                  },
-                  "20": {
-                    "color": "dark-red",
-                    "index": 2,
-                    "text": "OFF"
-                  },
-                  "21": {
-                    "color": "green",
-                    "index": 6,
-                    "text": "ON"
-                  },
-                  "30": {
-                    "color": "green",
-                    "index": 3,
-                    "text": "DISABLED"
-                  },
-                  "31": {
-                    "color": "yellow",
-                    "index": 7,
-                    "text": "ENABLED"
-                  }
-                },
-                "type": "value"
-              }
-            ],
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "green",
-                  "value": null
-                },
-                {
-                  "color": "red",
-                  "value": 80
-                }
-              ]
-            },
-            "unit": "short"
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 13,
-          "w": 4,
-          "x": 2,
-          "y": 18
-        },
-        "id": 8,
-        "options": {
-          "colorMode": "background",
-          "graphMode": "none",
-          "justifyMode": "center",
-          "orientation": "auto",
-          "reduceOptions": {
-            "calcs": [
-              "lastNotNull"
-            ],
-            "fields": "",
-            "values": false
-          },
-          "showPercentChange": false,
-          "textMode": "auto",
-          "wideLayout": true
-        },
-        "pluginVersion": "10.4.2",
-        "targets": [
-          {
-            "datasource": {
-              "type": "frser-sqlite-datasource",
-              "uid": "lmnopqrstuv"
-            },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_0 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_0 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_0 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_0 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_0 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_0 as VOLT_AGE_SEL\nfrom fast_ihk",
-            "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_0 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_0 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_0 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_0 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_0 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_0 as VOLT_AGE_SEL\nfrom fast_ihk",
-            "refId": "A",
-            "timeColumns": [
-              "time",
-              "ts"
-            ]
-          }
-        ],
-        "title": "Current, Temperature, Voltage Configuration",
-        "type": "stat"
       },
       {
         "datasource": {
@@ -1745,12 +1538,20 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
+                  "color": "purple",
                   "value": null
                 },
                 {
+                  "color": "green",
+                  "value": 52
+                },
+                {
+                  "color": "#EAB839",
+                  "value": 56
+                },
+                {
                   "color": "red",
-                  "value": 80
+                  "value": 57
                 }
               ]
             },
@@ -1761,8 +1562,8 @@
         "gridPos": {
           "h": 4,
           "w": 2,
-          "x": 6,
-          "y": 18
+          "x": 0,
+          "y": 20
         },
         "id": 2,
         "options": {
@@ -1783,7 +1584,7 @@
             "valueSize": 25
           },
           "textMode": "value_and_name",
-          "wideLayout": false
+          "wideLayout": true
         },
         "pluginVersion": "10.4.2",
         "targets": [
@@ -1792,9 +1593,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as D0_VBIAS\nfrom fast_ihk",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS\nfrom fast_ihk",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as D0_VBIAS\nfrom fast_ihk",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS\nfrom fast_ihk",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1802,7 +1603,7 @@
             ]
           }
         ],
-        "title": "Detector Snapshot",
+        "title": "Detector 0 Snapshot",
         "type": "stat"
       },
       {
@@ -1814,7 +1615,8 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "thresholds",
+              "seriesBy": "last"
             },
             "custom": {
               "axisBorderShow": false,
@@ -1824,8 +1626,8 @@
               "axisPlacement": "auto",
               "barAlignment": 0,
               "drawStyle": "line",
-              "fillOpacity": 25,
-              "gradientMode": "none",
+              "fillOpacity": 20,
+              "gradientMode": "scheme",
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
@@ -1833,7 +1635,7 @@
               },
               "insertNulls": false,
               "lineInterpolation": "stepAfter",
-              "lineWidth": 1,
+              "lineWidth": 3,
               "pointSize": 5,
               "scaleDistribution": {
                 "type": "linear"
@@ -1848,28 +1650,38 @@
                 "mode": "off"
               }
             },
+            "fieldMinMax": false,
             "mappings": [],
             "thresholds": {
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
+                  "color": "purple",
                   "value": null
                 },
                 {
+                  "color": "green",
+                  "value": 51
+                },
+                {
+                  "color": "#EAB839",
+                  "value": 55
+                },
+                {
                   "color": "red",
-                  "value": 80
+                  "value": 57
                 }
               ]
-            }
+            },
+            "unit": "celsius"
           },
           "overrides": []
         },
         "gridPos": {
           "h": 4,
           "w": 7,
-          "x": 8,
-          "y": 18
+          "x": 2,
+          "y": 20
         },
         "id": 12,
         "options": {
@@ -1909,6 +1721,227 @@
           "type": "frser-sqlite-datasource",
           "uid": "lmnopqrstuv"
         },
+        "fieldConfig": {
+          "defaults": {
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "dark-red",
+                    "index": 0,
+                    "text": "DISABLED"
+                  },
+                  "1": {
+                    "color": "green",
+                    "index": 3,
+                    "text": "ENABLED"
+                  },
+                  "10": {
+                    "color": "dark-red",
+                    "index": 1,
+                    "text": "INHIBITED"
+                  },
+                  "11": {
+                    "color": "green",
+                    "index": 4,
+                    "text": "CLEAR"
+                  },
+                  "20": {
+                    "color": "dark-red",
+                    "index": 2,
+                    "text": "OFF"
+                  },
+                  "21": {
+                    "color": "green",
+                    "index": 5,
+                    "text": "ON"
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 13,
+          "w": 3,
+          "x": 10,
+          "y": 20
+        },
+        "id": 1,
+        "options": {
+          "colorMode": "background",
+          "graphMode": "none",
+          "justifyMode": "center",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "text": {},
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.2",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "lmnopqrstuv"
+            },
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk",
+            "queryType": "table",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "D0",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "lmnopqrstuv"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-GrYlRd"
+            },
+            "custom": {
+              "fillOpacity": 70,
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineWidth": 0,
+              "spanNulls": false
+            },
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "red",
+                    "index": 0,
+                    "text": "DISABLED"
+                  },
+                  "1": {
+                    "color": "green",
+                    "index": 3,
+                    "text": "ENABLED"
+                  },
+                  "10": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "INHIBITED"
+                  },
+                  "11": {
+                    "color": "green",
+                    "index": 4,
+                    "text": "CLEAR"
+                  },
+                  "20": {
+                    "color": "red",
+                    "index": 2,
+                    "text": "OFF"
+                  },
+                  "21": {
+                    "color": "green",
+                    "index": 5,
+                    "text": "ON"
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 13,
+          "w": 7,
+          "x": 13,
+          "y": 20
+        },
+        "id": 38,
+        "options": {
+          "alignValue": "left",
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "10.4.2",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "lmnopqrstuv"
+            },
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk",
+            "queryType": "table",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "SITREP",
+        "type": "state-timeline"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "lmnopqrstuv"
+        },
         "description": "",
         "fieldConfig": {
           "defaults": {
@@ -1933,8 +1966,8 @@
         "gridPos": {
           "h": 3,
           "w": 2,
-          "x": 6,
-          "y": 22
+          "x": 0,
+          "y": 24
         },
         "id": 3,
         "options": {
@@ -1964,9 +1997,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as D0_IBIAS\nfrom fast_ihk",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as IBIAS\nfrom fast_ihk",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as D0_IBIAS\nfrom fast_ihk",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as IBIAS\nfrom fast_ihk",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2032,15 +2065,16 @@
                   "value": 80
                 }
               ]
-            }
+            },
+            "unit": "mamp"
           },
           "overrides": []
         },
         "gridPos": {
           "h": 3,
           "w": 7,
-          "x": 8,
-          "y": 22
+          "x": 2,
+          "y": 24
         },
         "id": 13,
         "options": {
@@ -2111,8 +2145,8 @@
         "gridPos": {
           "h": 3,
           "w": 2,
-          "x": 6,
-          "y": 25
+          "x": 0,
+          "y": 27
         },
         "id": 4,
         "options": {
@@ -2142,9 +2176,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as D0_TEMP\nfrom fast_ihk",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP\nfrom fast_ihk",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as D0_TEMP\nfrom fast_ihk",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP\nfrom fast_ihk",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2163,7 +2197,7 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "thresholds"
             },
             "custom": {
               "axisBorderShow": false,
@@ -2173,8 +2207,8 @@
               "axisPlacement": "auto",
               "barAlignment": 0,
               "drawStyle": "line",
-              "fillOpacity": 25,
-              "gradientMode": "none",
+              "fillOpacity": 20,
+              "gradientMode": "scheme",
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
@@ -2182,7 +2216,7 @@
               },
               "insertNulls": false,
               "lineInterpolation": "stepAfter",
-              "lineWidth": 1,
+              "lineWidth": 3,
               "pointSize": 5,
               "scaleDistribution": {
                 "type": "linear"
@@ -2202,11 +2236,28 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "purple",
+                  "value": null
+                },
+                {
+                  "color": "blue",
+                  "value": 10
+                },
+                {
+                  "color": "green",
+                  "value": 20
+                },
+                {
+                  "color": "yellow",
+                  "value": 30
+                },
+                {
+                  "color": "orange",
+                  "value": 40
                 },
                 {
                   "color": "red",
-                  "value": 80
+                  "value": 50
                 }
               ]
             }
@@ -2216,8 +2267,8 @@
         "gridPos": {
           "h": 3,
           "w": 7,
-          "x": 8,
-          "y": 25
+          "x": 2,
+          "y": 27
         },
         "id": 15,
         "options": {
@@ -2276,8 +2327,8 @@
         "gridPos": {
           "h": 3,
           "w": 2,
-          "x": 6,
-          "y": 28
+          "x": 0,
+          "y": 30
         },
         "id": 5,
         "options": {
@@ -2307,9 +2358,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as D0_PHOT_CNT\nfrom fast_ihk",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT\nfrom fast_ihk",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as D0_PHOT_CNT\nfrom fast_ihk",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT\nfrom fast_ihk",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2328,7 +2379,7 @@
         "fieldConfig": {
           "defaults": {
             "color": {
-              "mode": "palette-classic"
+              "mode": "thresholds"
             },
             "custom": {
               "axisBorderShow": false,
@@ -2338,8 +2389,8 @@
               "axisPlacement": "auto",
               "barAlignment": 0,
               "drawStyle": "line",
-              "fillOpacity": 25,
-              "gradientMode": "none",
+              "fillOpacity": 20,
+              "gradientMode": "scheme",
               "hideFrom": {
                 "legend": false,
                 "tooltip": false,
@@ -2347,7 +2398,7 @@
               },
               "insertNulls": false,
               "lineInterpolation": "stepAfter",
-              "lineWidth": 1,
+              "lineWidth": 3,
               "pointSize": 5,
               "scaleDistribution": {
                 "type": "linear"
@@ -2367,12 +2418,28 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
+                  "color": "purple",
                   "value": null
                 },
                 {
+                  "color": "blue",
+                  "value": 5000
+                },
+                {
+                  "color": "green",
+                  "value": 10000
+                },
+                {
+                  "color": "yellow",
+                  "value": 15000
+                },
+                {
+                  "color": "orange",
+                  "value": 20000
+                },
+                {
                   "color": "red",
-                  "value": 80
+                  "value": 25000
                 }
               ]
             }
@@ -2382,8 +2449,8 @@
         "gridPos": {
           "h": 3,
           "w": 7,
-          "x": 8,
-          "y": 28
+          "x": 2,
+          "y": 30
         },
         "id": 14,
         "options": {
@@ -2418,27 +2485,60 @@
         "type": "timeseries"
       },
       {
-        "collapsed": false,
-        "gridPos": {
-          "h": 1,
-          "w": 24,
-          "x": 0,
-          "y": 31
-        },
-        "id": 10,
-        "panels": [],
-        "title": "Settings and Detector Masks",
-        "type": "row"
-      },
-      {
         "datasource": {
           "type": "frser-sqlite-datasource",
           "uid": "lmnopqrstuv"
         },
-        "description": "",
+        "description": "Status of override and select flags.",
         "fieldConfig": {
           "defaults": {
-            "mappings": [],
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "red",
+                    "index": 0,
+                    "text": "NO"
+                  },
+                  "1": {
+                    "color": "green",
+                    "index": 4,
+                    "text": "YES"
+                  },
+                  "10": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "INHIBITED"
+                  },
+                  "11": {
+                    "color": "green",
+                    "index": 5,
+                    "text": "CLEAR"
+                  },
+                  "20": {
+                    "color": "red",
+                    "index": 2,
+                    "text": "OFF"
+                  },
+                  "21": {
+                    "color": "green",
+                    "index": 6,
+                    "text": "ON"
+                  },
+                  "30": {
+                    "color": "green",
+                    "index": 3,
+                    "text": "DISABLED"
+                  },
+                  "31": {
+                    "color": "yellow",
+                    "index": 7,
+                    "text": "ENABLED"
+                  }
+                },
+                "type": "value"
+              }
+            ],
             "thresholds": {
               "mode": "absolute",
               "steps": [
@@ -2457,16 +2557,16 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 16,
-          "w": 5,
+          "h": 12,
+          "w": 4,
           "x": 0,
-          "y": 32
+          "y": 33
         },
-        "id": 9,
+        "id": 8,
         "options": {
           "colorMode": "background",
           "graphMode": "none",
-          "justifyMode": "auto",
+          "justifyMode": "center",
           "orientation": "auto",
           "reduceOptions": {
             "calcs": [
@@ -2486,9 +2586,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time\n-- BC_CNDH_0x10_BASEMEDIAN_0,\n-- BC_CNDH_0x28_IBIAS_LIM_0, \n-- BC_CNDH_0x3B_BASE_SELECT_0,\n-- BC_CNDH_0x3B_CONST_BASELN_0,\n-- BC_CNDH_0x42_PULS_LOWPASS_0,\n-- BC_CNDH_0x43_PHA_WIN_0,\n-- BC_CNDH_0x48_PEAK_THRSH\nfrom fast_ihk",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_0 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_0 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_0 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_0 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_0 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_0 as VOLT_AGE_SEL\nfrom fast_ihk",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time\n-- BC_CNDH_0x10_BASEMEDIAN_0,\n-- BC_CNDH_0x28_IBIAS_LIM_0, \n-- BC_CNDH_0x3B_BASE_SELECT_0,\n-- BC_CNDH_0x3B_CONST_BASELN_0,\n-- BC_CNDH_0x42_PULS_LOWPASS_0,\n-- BC_CNDH_0x43_PHA_WIN_0,\n-- BC_CNDH_0x48_PEAK_THRSH\nfrom fast_ihk",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_0 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_0 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_0 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_0 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_0 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_0 as VOLT_AGE_SEL\nfrom fast_ihk",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2496,8 +2596,135 @@
             ]
           }
         ],
-        "title": "Bias & Threshold Settings",
+        "title": "Current, Temperature, Voltage Configuration",
         "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "lmnopqrstuv"
+        },
+        "description": "Status of override and select flags.",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-GrYlRd"
+            },
+            "custom": {
+              "fillOpacity": 70,
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineWidth": 0,
+              "spanNulls": false
+            },
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "red",
+                    "index": 0,
+                    "text": "NO"
+                  },
+                  "1": {
+                    "color": "green",
+                    "index": 4,
+                    "text": "YES"
+                  },
+                  "10": {
+                    "color": "red",
+                    "index": 1,
+                    "text": "INHIBITED"
+                  },
+                  "11": {
+                    "color": "green",
+                    "index": 5,
+                    "text": "CLEAR"
+                  },
+                  "20": {
+                    "color": "red",
+                    "index": 2,
+                    "text": "OFF"
+                  },
+                  "21": {
+                    "color": "green",
+                    "index": 6,
+                    "text": "ON"
+                  },
+                  "30": {
+                    "color": "green",
+                    "index": 3,
+                    "text": "DISABLED"
+                  },
+                  "31": {
+                    "color": "yellow",
+                    "index": 7,
+                    "text": "ENABLED"
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 12,
+          "w": 7,
+          "x": 4,
+          "y": 33
+        },
+        "id": 39,
+        "options": {
+          "alignValue": "left",
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "10.4.2",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "lmnopqrstuv"
+            },
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_0 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_0 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_0 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_0 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_0 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_0 as VOLT_AGE_SEL\nfrom fast_ihk",
+            "queryType": "table",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_0 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_0 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_0 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_0 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_0 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_0 as VOLT_AGE_SEL\nfrom fast_ihk",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "Current, Temperature, Voltage Configuration",
+        "type": "state-timeline"
       },
       {
         "datasource": {
@@ -2542,10 +2769,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 12,
           "w": 2,
-          "x": 6,
-          "y": 32
+          "x": 11,
+          "y": 33
         },
         "id": 26,
         "options": {
@@ -2639,10 +2866,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
-          "w": 6,
-          "x": 8,
-          "y": 32
+          "h": 12,
+          "w": 7,
+          "x": 13,
+          "y": 33
         },
         "id": 27,
         "options": {
@@ -2679,30 +2906,104 @@
         ],
         "title": "Datastream Enable Mask Trend",
         "type": "state-timeline"
+      },
+      {
+        "collapsed": false,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 45
+        },
+        "id": 10,
+        "panels": [],
+        "title": "Settings and Detector Masks",
+        "type": "row"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "lmnopqrstuv"
+        },
+        "description": "",
+        "fieldConfig": {
+          "defaults": {
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 16,
+          "w": 5,
+          "x": 0,
+          "y": 46
+        },
+        "id": 9,
+        "options": {
+          "colorMode": "background",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.2",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "lmnopqrstuv"
+            },
+            "queryText": "SELECT\nTIME as time\n-- BC_CNDH_0x10_BASEMEDIAN_0,\n-- BC_CNDH_0x28_IBIAS_LIM_0, \n-- BC_CNDH_0x3B_BASE_SELECT_0,\n-- BC_CNDH_0x3B_CONST_BASELN_0,\n-- BC_CNDH_0x42_PULS_LOWPASS_0,\n-- BC_CNDH_0x43_PHA_WIN_0,\n-- BC_CNDH_0x48_PEAK_THRSH\nfrom fast_ihk",
+            "queryType": "table",
+            "rawQueryText": "SELECT\nTIME as time\n-- BC_CNDH_0x10_BASEMEDIAN_0,\n-- BC_CNDH_0x28_IBIAS_LIM_0, \n-- BC_CNDH_0x3B_BASE_SELECT_0,\n-- BC_CNDH_0x3B_CONST_BASELN_0,\n-- BC_CNDH_0x42_PULS_LOWPASS_0,\n-- BC_CNDH_0x43_PHA_WIN_0,\n-- BC_CNDH_0x48_PEAK_THRSH\nfrom fast_ihk",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "Bias & Threshold Settings",
+        "type": "stat"
       }
     ],
     "refresh": "",
     "schemaVersion": 39,
     "tags": [],
     "templating": {
-      "list": [
-        {
-          "hide": 2,
-          "name": "detector_id",
-          "query": "",
-          "skipUrlSync": false,
-          "type": "constant"
-        }
-      ]
+      "list": []
     },
     "time": {
-      "from": "2035-10-16T22:48:01.029Z",
-      "to": "2035-10-17T00:40:33.301Z"
+      "from": "2035-10-16T22:49:48.630Z",
+      "to": "2035-10-17T01:20:04.997Z"
     },
     "timepicker": {},
     "timezone": "utc",
     "title": "Detector 0 Operational Status Trends",
     "uid": null,
-    "version": 1,
+    "version": 2,
     "weekStart": ""
   }

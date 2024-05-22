@@ -22,12 +22,37 @@
     "links": [],
     "panels": [
       {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "lmnopqrstuv"
+        },
+        "description": "",
+        "gridPos": {
+          "h": 2,
+          "w": 20,
+          "x": 0,
+          "y": 0
+        },
+        "id": 40,
+        "options": {
+          "code": {
+            "language": "plaintext",
+            "showLineNumbers": false,
+            "showMiniMap": false
+          },
+          "content": "# IDPU\n",
+          "mode": "markdown"
+        },
+        "pluginVersion": "10.4.2",
+        "type": "text"
+      },
+      {
         "collapsed": false,
         "gridPos": {
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 0
+          "y": 2
         },
         "id": 4,
         "panels": [],
@@ -79,7 +104,7 @@
           "h": 19,
           "w": 3,
           "x": 0,
-          "y": 1
+          "y": 3
         },
         "id": 5,
         "options": {
@@ -176,7 +201,7 @@
           "h": 19,
           "w": 12,
           "x": 3,
-          "y": 1
+          "y": 3
         },
         "id": 6,
         "options": {
@@ -220,7 +245,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 20
+          "y": 22
         },
         "id": 3,
         "panels": [],
@@ -272,7 +297,7 @@
           "h": 7,
           "w": 3,
           "x": 0,
-          "y": 21
+          "y": 23
         },
         "id": 1,
         "options": {
@@ -390,7 +415,7 @@
           "h": 7,
           "w": 12,
           "x": 3,
-          "y": 21
+          "y": 23
         },
         "id": 2,
         "options": {
@@ -453,7 +478,7 @@
           "h": 6,
           "w": 3,
           "x": 0,
-          "y": 28
+          "y": 30
         },
         "id": 7,
         "options": {
@@ -504,7 +529,7 @@
     "timepicker": {},
     "timezone": "browser",
     "title": "IDPU Trends",
-    "uid": null,
-    "version": 6,
+    "uid": "edmhwptz93qwwd",
+    "version": 8,
     "weekStart": ""
   }
