@@ -3012,7 +3012,7 @@
     },
     "timepicker": {},
     "timezone": "utc",
-    "title": "Detector 0 Operational Status Trends",
+    "title": "Detector 0 Operational Status",
     "uid": null,
     "version": 62,
     "weekStart": ""
