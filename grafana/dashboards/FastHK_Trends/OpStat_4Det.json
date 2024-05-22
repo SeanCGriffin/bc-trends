@@ -18,6 +18,7 @@
     "editable": true,
     "fiscalYearStartMonth": 0,
     "graphTooltip": 0,
+    "id": 16,
     "links": [],
     "panels": [
       {
@@ -103,8 +104,7 @@
                   "mode": "absolute",
                   "steps": [
                     {
-                      "color": "green",
-                      "value": null
+                      "color": "green"
                     },
                     {
                       "color": "red",
@@ -222,8 +222,7 @@
                   "mode": "absolute",
                   "steps": [
                     {
-                      "color": "green",
-                      "value": null
+                      "color": "green"
                     },
                     {
                       "color": "red",
@@ -324,8 +323,7 @@
                   "mode": "absolute",
                   "steps": [
                     {
-                      "color": "green",
-                      "value": null
+                      "color": "green"
                     },
                     {
                       "color": "red",
@@ -443,8 +441,7 @@
                   "mode": "absolute",
                   "steps": [
                     {
-                      "color": "green",
-                      "value": null
+                      "color": "green"
                     },
                     {
                       "color": "red",
@@ -545,8 +542,7 @@
                   "mode": "absolute",
                   "steps": [
                     {
-                      "color": "green",
-                      "value": null
+                      "color": "green"
                     },
                     {
                       "color": "red",
@@ -664,8 +660,7 @@
                   "mode": "absolute",
                   "steps": [
                     {
-                      "color": "green",
-                      "value": null
+                      "color": "green"
                     },
                     {
                       "color": "red",
@@ -766,8 +761,7 @@
                   "mode": "absolute",
                   "steps": [
                     {
-                      "color": "green",
-                      "value": null
+                      "color": "green"
                     },
                     {
                       "color": "red",
@@ -885,8 +879,7 @@
                   "mode": "absolute",
                   "steps": [
                     {
-                      "color": "green",
-                      "value": null
+                      "color": "green"
                     },
                     {
                       "color": "red",
@@ -1117,7 +1110,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "purple"
+                  "color": "purple",
+                  "value": null
                 },
                 {
                   "color": "blue",
@@ -1660,7 +1654,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "purple"
+                  "color": "purple",
+                  "value": null
                 },
                 {
                   "color": "blue",
@@ -2203,105 +2198,6 @@
         "description": "",
         "fieldConfig": {
           "defaults": {
-            "color": {
-              "mode": "palette-classic"
-            },
-            "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
-              "hideFrom": {
-                "legend": false,
-                "tooltip": false,
-                "viz": false
-              },
-              "insertNulls": false,
-              "lineInterpolation": "stepAfter",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
-            },
-            "mappings": [],
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "green",
-                  "value": null
-                },
-                {
-                  "color": "red",
-                  "value": 80
-                }
-              ]
-            },
-            "unit": "mamp"
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 6,
-          "w": 9,
-          "x": 0,
-          "y": 27
-        },
-        "id": 55,
-        "options": {
-          "legend": {
-            "calcs": [],
-            "displayMode": "list",
-            "placement": "bottom",
-            "showLegend": true
-          },
-          "tooltip": {
-            "mode": "single",
-            "sort": "none"
-          }
-        },
-        "pluginVersion": "10.4.2",
-        "targets": [
-          {
-            "datasource": {
-              "type": "frser-sqlite-datasource",
-              "uid": "lmnopqrstuv"
-            },
-            "queryText": "SELECT\nTIME as time, \nCASE when BC_CNDH_0x4_IBIAS_0  > 0 then BC_CNDH_0x4_IBIAS_0 / 1000 else NULL END as IBIAS_0,\nCASE when BC_CNDH_0x5_IBIAS_1  > 0 then BC_CNDH_0x5_IBIAS_1 / 1000 else NULL END as IBIAS_1,\nCASE when BC_CNDH_0x6_IBIAS_2  > 0 then BC_CNDH_0x6_IBIAS_2 / 1000 else NULL END as IBIAS_2,\nCASE when BC_CNDH_0x7_IBIAS_3  > 0 then BC_CNDH_0x7_IBIAS_3 / 1000 else NULL END as IBIAS_3\nfrom fast_ihk",
-            "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nCASE when BC_CNDH_0x4_IBIAS_0  > 0 then BC_CNDH_0x4_IBIAS_0 / 1000 else NULL END as IBIAS_0,\nCASE when BC_CNDH_0x5_IBIAS_1  > 0 then BC_CNDH_0x5_IBIAS_1 / 1000 else NULL END as IBIAS_1,\nCASE when BC_CNDH_0x6_IBIAS_2  > 0 then BC_CNDH_0x6_IBIAS_2 / 1000 else NULL END as IBIAS_2,\nCASE when BC_CNDH_0x7_IBIAS_3  > 0 then BC_CNDH_0x7_IBIAS_3 / 1000 else NULL END as IBIAS_3\nfrom fast_ihk",
-            "refId": "A",
-            "timeColumns": [
-              "time",
-              "ts"
-            ]
-          }
-        ],
-        "type": "timeseries"
-      },
-      {
-        "datasource": {
-          "type": "frser-sqlite-datasource",
-          "uid": "lmnopqrstuv"
-        },
-        "description": "",
-        "fieldConfig": {
-          "defaults": {
             "mappings": [
               {
                 "options": {
@@ -2340,7 +2236,7 @@
           "h": 12,
           "w": 2,
           "x": 0,
-          "y": 33
+          "y": 27
         },
         "id": 26,
         "options": {
@@ -2437,7 +2333,7 @@
           "h": 12,
           "w": 7,
           "x": 2,
-          "y": 33
+          "y": 27
         },
         "id": 27,
         "options": {
@@ -2476,7 +2372,6 @@
         "type": "state-timeline"
       }
     ],
-    "refresh": "",
     "schemaVersion": 39,
     "tags": [],
     "templating": {
@@ -2490,6 +2385,6 @@
     "timezone": "utc",
     "title": "All Detector Reference",
     "uid": "admi3awxu61oge",
-    "version": 30,
+    "version": 31,
     "weekStart": ""
   }
