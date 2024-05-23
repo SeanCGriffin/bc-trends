@@ -121,9 +121,9 @@
             "type": "frser-sqlite-datasource",
             "uid": "lmnopqrstuv"
           },
-          "queryText": "select \nTIME as time,\nTINT_IDATA_nphot_recv_DET_0 as D0,\nTINT_IDATA_nphot_recv_DET_1 as D1,\nTINT_IDATA_nphot_recv_DET_2 as D2,\nTINT_IDATA_nphot_recv_DET_3 as D3\nfrom fast_ihk",
+          "queryText": "select \nTIME as time,\nTINT_IDATA_nphot_recv_DET_0 as D0,\nTINT_IDATA_nphot_recv_DET_1 as D1,\nTINT_IDATA_nphot_recv_DET_2 as D2,\nTINT_IDATA_nphot_recv_DET_3 as D3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "queryType": "table",
-          "rawQueryText": "select \nTIME as time,\nTINT_IDATA_nphot_recv_DET_0 as D0,\nTINT_IDATA_nphot_recv_DET_1 as D1,\nTINT_IDATA_nphot_recv_DET_2 as D2,\nTINT_IDATA_nphot_recv_DET_3 as D3\nfrom fast_ihk",
+          "rawQueryText": "select \nTIME as time,\nTINT_IDATA_nphot_recv_DET_0 as D0,\nTINT_IDATA_nphot_recv_DET_1 as D1,\nTINT_IDATA_nphot_recv_DET_2 as D2,\nTINT_IDATA_nphot_recv_DET_3 as D3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "refId": "A",
           "timeColumns": [
             "time",
@@ -186,9 +186,9 @@
             "type": "frser-sqlite-datasource",
             "uid": "lmnopqrstuv"
           },
-          "queryText": "select \nTIME as time,\nTINT_IDATA_nphot_recv_DET_0 as D0,\nTINT_IDATA_nphot_recv_DET_1 as D1,\nTINT_IDATA_nphot_recv_DET_2 as D2,\nTINT_IDATA_nphot_recv_DET_3 as D3\nfrom fast_ihk",
+          "queryText": "select \nTIME as time,\nTINT_IDATA_nphot_recv_DET_0 as D0,\nTINT_IDATA_nphot_recv_DET_1 as D1,\nTINT_IDATA_nphot_recv_DET_2 as D2,\nTINT_IDATA_nphot_recv_DET_3 as D3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "queryType": "table",
-          "rawQueryText": "select \nTIME as time,\nTINT_IDATA_nphot_recv_DET_0 as D0,\nTINT_IDATA_nphot_recv_DET_1 as D1,\nTINT_IDATA_nphot_recv_DET_2 as D2,\nTINT_IDATA_nphot_recv_DET_3 as D3\nfrom fast_ihk",
+          "rawQueryText": "select \nTIME as time,\nTINT_IDATA_nphot_recv_DET_0 as D0,\nTINT_IDATA_nphot_recv_DET_1 as D1,\nTINT_IDATA_nphot_recv_DET_2 as D2,\nTINT_IDATA_nphot_recv_DET_3 as D3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "refId": "A",
           "timeColumns": [
             "time",
@@ -287,9 +287,9 @@
             "type": "frser-sqlite-datasource",
             "uid": "lmnopqrstuv"
           },
-          "queryText": "select \nTIME as time,\nSPI_BCSPI_R_NPHOTRECV as SPI,\nTTE_R_NPHOTRECV as TTE\nfrom fast_ihk",
+          "queryText": "select \nTIME as time,\nSPI_BCSPI_R_NPHOTRECV as SPI,\nTTE_R_NPHOTRECV as TTE\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "queryType": "table",
-          "rawQueryText": "select \nTIME as time,\nSPI_BCSPI_R_NPHOTRECV as SPI,\nTTE_R_NPHOTRECV as TTE\nfrom fast_ihk",
+          "rawQueryText": "select \nTIME as time,\nSPI_BCSPI_R_NPHOTRECV as SPI,\nTTE_R_NPHOTRECV as TTE\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "refId": "A",
           "timeColumns": [
             "time",
@@ -352,9 +352,9 @@
             "type": "frser-sqlite-datasource",
             "uid": "lmnopqrstuv"
           },
-          "queryText": "select \nTIME as time,\nSPI_BCSPI_R_NPHOTRECV as SPI,\nTTE_R_NPHOTRECV as TTE\nfrom fast_ihk",
+          "queryText": "select \nTIME as time,\nSPI_BCSPI_R_NPHOTRECV as SPI,\nTTE_R_NPHOTRECV as TTE\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "queryType": "table",
-          "rawQueryText": "select \nTIME as time,\nSPI_BCSPI_R_NPHOTRECV as SPI,\nTTE_R_NPHOTRECV as TTE\nfrom fast_ihk",
+          "rawQueryText": "select \nTIME as time,\nSPI_BCSPI_R_NPHOTRECV as SPI,\nTTE_R_NPHOTRECV as TTE\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "refId": "A",
           "timeColumns": [
             "time",
@@ -466,9 +466,9 @@
             "type": "frser-sqlite-datasource",
             "uid": "lmnopqrstuv"
           },
-          "queryText": "select TIME as time,\nTINT_CBD_fifo_occupancy as CBD,\nTINT_IDATA_fifo_occupancy as IDATA\nfrom fast_ihk",
+          "queryText": "select TIME as time,\nTINT_CBD_fifo_occupancy as CBD,\nTINT_IDATA_fifo_occupancy as IDATA\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "queryType": "table",
-          "rawQueryText": "select TIME as time,\nTINT_CBD_fifo_occupancy as CBD,\nTINT_IDATA_fifo_occupancy as IDATA\nfrom fast_ihk",
+          "rawQueryText": "select TIME as time,\nTINT_CBD_fifo_occupancy as CBD,\nTINT_IDATA_fifo_occupancy as IDATA\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "refId": "A",
           "timeColumns": [
             "time",
@@ -567,9 +567,9 @@
             "type": "frser-sqlite-datasource",
             "uid": "lmnopqrstuv"
           },
-          "queryText": "select TIME as time,\nTTE_fifo_occupancy as TTE\nfrom fast_ihk",
+          "queryText": "select TIME as time,\nTTE_fifo_occupancy as TTE\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "queryType": "table",
-          "rawQueryText": "select TIME as time,\nTTE_fifo_occupancy as TTE\nfrom fast_ihk",
+          "rawQueryText": "select TIME as time,\nTTE_fifo_occupancy as TTE\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
           "refId": "A",
           "timeColumns": [
             "time",
@@ -648,9 +648,9 @@
             "type": "frser-sqlite-datasource",
             "uid": "lmnopqrstuv"
           },
-          "queryText": "select TIME as time, \nTTE_STORE_MISSED_MSGS as MISSED_MSGS, \nTTE_STORE_MISSED_BLOCKS as MISSED_BLOCKS \nfrom fast_ihk\n\n",
+          "queryText": "select TIME as time, \nTTE_STORE_MISSED_MSGS as MISSED_MSGS, \nTTE_STORE_MISSED_BLOCKS as MISSED_BLOCKS \nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}\n\n",
           "queryType": "table",
-          "rawQueryText": "select TIME as time, \nTTE_STORE_MISSED_MSGS as MISSED_MSGS, \nTTE_STORE_MISSED_BLOCKS as MISSED_BLOCKS \nfrom fast_ihk\n\n",
+          "rawQueryText": "select TIME as time, \nTTE_STORE_MISSED_MSGS as MISSED_MSGS, \nTTE_STORE_MISSED_BLOCKS as MISSED_BLOCKS \nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}\n\n",
           "refId": "A",
           "timeColumns": [
             "time",
@@ -747,9 +747,9 @@
             "type": "frser-sqlite-datasource",
             "uid": "lmnopqrstuv"
           },
-          "queryText": "select TIME as time, \nTTE_STORE_IS_ON\nfrom fast_ihk\n\n",
+          "queryText": "select TIME as time, \nTTE_STORE_IS_ON\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}\n\n",
           "queryType": "table",
-          "rawQueryText": "select TIME as time, \nTTE_STORE_IS_ON\nfrom fast_ihk\n\n",
+          "rawQueryText": "select TIME as time, \nTTE_STORE_IS_ON\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}\n\n",
           "refId": "A",
           "timeColumns": [
             "time",
