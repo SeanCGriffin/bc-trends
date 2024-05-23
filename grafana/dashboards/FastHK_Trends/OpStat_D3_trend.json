@@ -1985,8 +1985,6 @@
           },
           "showPercentChange": false,
           "text": {
-            "titleSize": 25,
-            "valueSize": 25
           },
           "textMode": "value_and_name",
           "wideLayout": false
@@ -2353,8 +2351,6 @@
           },
           "showPercentChange": false,
           "text": {
-            "titleSize": 25,
-            "valueSize": 25
           },
           "textMode": "value_and_name",
           "wideLayout": false
