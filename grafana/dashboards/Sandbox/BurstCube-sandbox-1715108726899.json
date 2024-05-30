@@ -119,9 +119,9 @@
               "name": "burstcube-test",
               "type": "frser-sqlite-datasource"
             },
-            "queryText": "SELECT TIME, BC_CNDH_0x1B_PHOT_CNT_0, BC_CNDH_0x1C_PHOT_CNT_1, BC_CNDH_0x1D_PHOT_CNT_2, BC_CNDH_0x1E_PHOT_CNT_3 from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds} ORDER BY TIME ASC",
+            "queryText": "SELECT TIME, BC_CNDH_0x1B_PHOT_CNT_0, BC_CNDH_0x1C_PHOT_CNT_1, BC_CNDH_0x1D_PHOT_CNT_2, BC_CNDH_0x1E_PHOT_CNT_3 from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400) ORDER BY TIME ASC",
             "queryType": "table",
-            "rawQueryText": "SELECT TIME, BC_CNDH_0x1B_PHOT_CNT_0, BC_CNDH_0x1C_PHOT_CNT_1, BC_CNDH_0x1D_PHOT_CNT_2, BC_CNDH_0x1E_PHOT_CNT_3 from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds} ORDER BY TIME ASC",
+            "rawQueryText": "SELECT TIME, BC_CNDH_0x1B_PHOT_CNT_0, BC_CNDH_0x1C_PHOT_CNT_1, BC_CNDH_0x1D_PHOT_CNT_2, BC_CNDH_0x1E_PHOT_CNT_3 from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400) ORDER BY TIME ASC",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -220,9 +220,9 @@
               "name": "burstcube-test",
               "type": "frser-sqlite-datasource"
             },
-            "queryText": "SELECT TIME as time, \nTINT_IDATA_nphot_recv_DET_0,\nTINT_IDATA_nphot_recv_DET_1,\nTINT_IDATA_nphot_recv_DET_2,\nTINT_IDATA_nphot_recv_DET_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds} ",
+            "queryText": "SELECT TIME as time, \nTINT_IDATA_nphot_recv_DET_0,\nTINT_IDATA_nphot_recv_DET_1,\nTINT_IDATA_nphot_recv_DET_2,\nTINT_IDATA_nphot_recv_DET_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400) ",
             "queryType": "table",
-            "rawQueryText": "SELECT TIME as time, \nTINT_IDATA_nphot_recv_DET_0,\nTINT_IDATA_nphot_recv_DET_1,\nTINT_IDATA_nphot_recv_DET_2,\nTINT_IDATA_nphot_recv_DET_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds} ",
+            "rawQueryText": "SELECT TIME as time, \nTINT_IDATA_nphot_recv_DET_0,\nTINT_IDATA_nphot_recv_DET_1,\nTINT_IDATA_nphot_recv_DET_2,\nTINT_IDATA_nphot_recv_DET_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400) ",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -289,9 +289,9 @@
               "name": "burstcube-test",
               "type": "frser-sqlite-datasource"
             },
-            "queryText": "select TIME as time, TTE_STORE_MISSED_MSGS, TTE_STORE_MISSED_BLOCKS from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "select TIME as time, TTE_STORE_MISSED_MSGS, TTE_STORE_MISSED_BLOCKS from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "select TIME as time, TTE_STORE_MISSED_MSGS, TTE_STORE_MISSED_BLOCKS from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "select TIME as time, TTE_STORE_MISSED_MSGS, TTE_STORE_MISSED_BLOCKS from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -429,9 +429,9 @@
               "name": "burstcube-test",
               "type": "frser-sqlite-datasource"
             },
-            "queryText": "select BC_CNDH_0x0_VBIAS_0,\nBC_CNDH_0x1_VBIAS_1,\nBC_CNDH_0x2_VBIAS_2,\nBC_CNDH_0x3_VBIAS_3, TIME as time\n from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "select BC_CNDH_0x0_VBIAS_0,\nBC_CNDH_0x1_VBIAS_1,\nBC_CNDH_0x2_VBIAS_2,\nBC_CNDH_0x3_VBIAS_3, TIME as time\n from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "time series",
-            "rawQueryText": "select BC_CNDH_0x0_VBIAS_0,\nBC_CNDH_0x1_VBIAS_1,\nBC_CNDH_0x2_VBIAS_2,\nBC_CNDH_0x3_VBIAS_3, TIME as time\n from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "select BC_CNDH_0x0_VBIAS_0,\nBC_CNDH_0x1_VBIAS_1,\nBC_CNDH_0x2_VBIAS_2,\nBC_CNDH_0x3_VBIAS_3, TIME as time\n from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -444,9 +444,9 @@
               "type": "frser-sqlite-datasource"
             },
             "hide": false,
-            "queryText": "select BC_CNDH_0x4_IBIAS_0,\nBC_CNDH_0x5_IBIAS_1,\nBC_CNDH_0x6_IBIAS_2,\nBC_CNDH_0x7_IBIAS_3, TIME as time\n from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "select BC_CNDH_0x4_IBIAS_0,\nBC_CNDH_0x5_IBIAS_1,\nBC_CNDH_0x6_IBIAS_2,\nBC_CNDH_0x7_IBIAS_3, TIME as time\n from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "select BC_CNDH_0x4_IBIAS_0,\nBC_CNDH_0x5_IBIAS_1,\nBC_CNDH_0x6_IBIAS_2,\nBC_CNDH_0x7_IBIAS_3, TIME as time\n from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "select BC_CNDH_0x4_IBIAS_0,\nBC_CNDH_0x5_IBIAS_1,\nBC_CNDH_0x6_IBIAS_2,\nBC_CNDH_0x7_IBIAS_3, TIME as time\n from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "B",
             "timeColumns": [
               "time",
@@ -536,9 +536,9 @@
               "name": "burstcube-test",
               "type": "frser-sqlite-datasource"
             },
-            "queryText": "select TIME as time, BC_CNDH_0x20_BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "select TIME as time, BC_CNDH_0x20_BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "time series",
-            "rawQueryText": "select TIME as time, BC_CNDH_0x20_BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "select TIME as time, BC_CNDH_0x20_BIAS_RELAY_EN_3,\nBC_CNDH_0x20_BIAS_RELAY_EN_2,\nBC_CNDH_0x20_BIAS_RELAY_EN_1,\nBC_CNDH_0x20_BIAS_RELAY_EN_0,\nBC_CNDH_0x20_IDAB_AMP_EN_3,\nBC_CNDH_0x20_IDAB_AMP_EN_2,\nBC_CNDH_0x20_IDAB_AMP_EN_1,\nBC_CNDH_0x20_IDAB_AMP_EN_0 from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -639,9 +639,9 @@
               "name": "burstcube-test",
               "type": "frser-sqlite-datasource"
             },
-            "queryText": "select TIME as time, IDATA_DET_3,\nIDATA_DET_2,\nIDATA_DET_1,\nIDATA_DET_0 from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "select TIME as time, IDATA_DET_3,\nIDATA_DET_2,\nIDATA_DET_1,\nIDATA_DET_0 from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "select TIME as time, IDATA_DET_3,\nIDATA_DET_2,\nIDATA_DET_1,\nIDATA_DET_0 from fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "select TIME as time, IDATA_DET_3,\nIDATA_DET_2,\nIDATA_DET_1,\nIDATA_DET_0 from fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
