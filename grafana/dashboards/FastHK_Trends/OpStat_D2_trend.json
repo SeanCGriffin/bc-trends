@@ -130,9 +130,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x12_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\n-- BC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\n-- BC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\n-- BC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x12_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\n-- BC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\n-- BC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\n-- BC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x12_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\n-- BC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\n-- BC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\n-- BC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x12_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\n-- BC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\n-- BC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\n-- BC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -226,9 +226,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x12_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\n-- BC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\n-- BC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\n-- BC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x12_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\n-- BC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\n-- BC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\n-- BC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x12_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\n-- BC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\n-- BC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\n-- BC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x12_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\n-- BC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\n-- BC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\n-- BC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -311,9 +311,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\nBC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\nBC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\nBC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\nBC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\nBC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\nBC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\nBC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\nBC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -408,9 +408,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\nBC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\nBC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\nBC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\nBC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\nBC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\nBC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\nBC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\nBC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -493,9 +493,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\nBC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\nBC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\nBC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\nBC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\nBC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\nBC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\nBC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\nBC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -590,9 +590,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\nBC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\nBC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\nBC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\nBC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\nBC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\nBC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\nBC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\nBC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -675,9 +675,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\nBC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\nBC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\nBC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\nBC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\nBC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\nBC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\nBC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\nBC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -772,9 +772,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\nBC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\nBC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\nBC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\nBC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\nBC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\nBC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\nBC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\nBC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -857,9 +857,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\nBC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\nBC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\nBC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\nBC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\nBC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\nBC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\nBC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\nBC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -954,9 +954,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\nBC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\nBC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\nBC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\nBC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\nBC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\nBC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\nBC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\nBC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1039,9 +1039,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\nBC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\nBC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\nBC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\nBC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\nBC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\nBC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\nBC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\nBC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1136,9 +1136,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\nBC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\nBC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\nBC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\nBC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\nBC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\nBC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\nBC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\nBC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1221,9 +1221,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\nBC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\nBC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\nBC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\nBC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\nBC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\nBC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\nBC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\nBC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1318,9 +1318,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\nBC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\nBC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\nBC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\nBC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\nBC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\nBC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\nBC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\nBC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1403,9 +1403,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\n-- BC_CNDH_0x10_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\nBC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\nBC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\nBC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\n-- BC_CNDH_0x10_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\nBC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\nBC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\nBC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\n-- BC_CNDH_0x10_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\nBC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\nBC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\nBC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\n-- BC_CNDH_0x10_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\nBC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\nBC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\nBC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1500,9 +1500,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\n-- BC_CNDH_0x10_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\nBC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\nBC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\nBC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\n-- BC_CNDH_0x10_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\nBC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\nBC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\nBC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\n-- BC_CNDH_0x10_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\nBC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\nBC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\nBC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\n-- BC_CNDH_0x10_OVRCURR_2 as OVERCURR\n-- BC_CNDH_0x14_I2C_SETUP_TEMP_2 as I2C_SETUP_TEMP,\n-- BC_CNDH_0x14_I2C_SETUP_CURR_2 as I2C_SETUP_CURR,\n-- BC_CNDH_0x14_I2C_SETUP_VOLT_2 as I2C_SETUP_VOLT\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_TEMP_2 AS I2C_ADDR_NOAK_TEMP,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_CURR_2 AS I2C_ADDR_NOAK_CURR,\n-- BC_CNDH_0x15_I2C_ADDR_NOAK_VOLT_2 AS I2C_ADDR_NOAK_VOLT,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_TEMP_2 AS I2C_DATA_NOAK_TEMP,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_CURR_2 AS I2C_DATA_NOAK_CURR,\n-- BC_CNDH_0x16_I2C_DATA_NOAK_VOLT_2 AS I2C_DATA_NOAK_VOLT,\n-- BC_CNDH_0x17_SCL_LO_TEMP_2 AS SCL_LO_TEMP,\n-- BC_CNDH_0x17_SCL_LO_CURR_2 AS SCL_LO_CURR,\n-- BC_CNDH_0x17_SCL_LO_VOLT_2 AS SCL_LO_VOLT,\n-- BC_CNDH_0x18_SCL_HI_TEMP_2 AS SCL_HI_TEMP,\n-- BC_CNDH_0x18_SCL_HI_CURR_2 AS SCL_HI_CURR,\n-- BC_CNDH_0x18_SCL_HI_VOLT_2 AS SCL_HI_VOLT,\n-- BC_CNDH_0x19_SDA_LO_TEMP_2 AS SDA_LO_TEMP,\n-- BC_CNDH_0x19_SDA_LO_CURR_2 AS SDA_LO_CURR,\n-- BC_CNDH_0x19_SDA_LO_VOLT_2 AS SDA_LO_VOLT,\nBC_CNDH_0x1A_SDA_HI_TEMP_2 AS SDA_HI_TEMP,\nBC_CNDH_0x1A_SDA_HI_CURR_2 AS SDA_HI_CURR,\nBC_CNDH_0x1A_SDA_HI_VOLT_2 AS SDA_HI_VOLT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1592,9 +1592,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as VBIAS\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as VBIAS\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as VBIAS\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as VBIAS\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1702,9 +1702,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as D0_VBIAS\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as D0_VBIAS\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as D0_VBIAS\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x2_VBIAS_2 as D0_VBIAS\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1807,9 +1807,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1923,9 +1923,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1994,9 +1994,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2093,9 +2093,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2180,9 +2180,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xA_TEMP_2 as TEMP\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xA_TEMP_2 as TEMP\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xA_TEMP_2 as TEMP\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xA_TEMP_2 as TEMP\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2294,9 +2294,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xA_TEMP_2 as D0_TEMP\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xA_TEMP_2 as D0_TEMP\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xA_TEMP_2 as D0_TEMP\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xA_TEMP_2 as D0_TEMP\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2362,9 +2362,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2476,9 +2476,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1D_PHOT_CNT_2 as D0_PHOT_CNT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1D_PHOT_CNT_2 as D0_PHOT_CNT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1D_PHOT_CNT_2 as D0_PHOT_CNT\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1D_PHOT_CNT_2 as D0_PHOT_CNT\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2590,9 +2590,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_2 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_2 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_2 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_2 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_2 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_2 as VOLT_AGE_SEL\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_2 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_2 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_2 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_2 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_2 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_2 as VOLT_AGE_SEL\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_2 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_2 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_2 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_2 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_2 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_2 as VOLT_AGE_SEL\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_2 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_2 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_2 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_2 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_2 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_2 as VOLT_AGE_SEL\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2717,9 +2717,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_2 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_2 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_2 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_2 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_2 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_2 as VOLT_AGE_SEL\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_2 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_2 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_2 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_2 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_2 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_2 as VOLT_AGE_SEL\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_2 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_2 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_2 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_2 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_2 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_2 as VOLT_AGE_SEL\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_OCURR_CTOF_ORIDE_2 + 30 as OCURR_CTOFF_ORIDE,\nBC_CNDH_0x20_OCURR_CTOF_EN_2 as OCURR_CTOFF_EN,\nBC_CNDH_0x25_TEMP_ERR_OVRD_2 + 30 as TEMP_ERR_OVRD, \nBC_CNDH_0x25_VOLT_ERR_OVRD_2 + 30 as VOLT_ERR_OVERD,\nBC_CNDH_0x25_TEMP_AVE_SEL_2 as TEMP_AVE_SEL,\nBC_CNDH_0x25_VOLT_AVE_SEL_2 as VOLT_AGE_SEL\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2802,9 +2802,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nCBD_DET_2 as CBD_ENA,\nIDATA_DET_2 as IDATA_ENA\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nCBD_DET_2 as CBD_ENA,\nIDATA_DET_2 as IDATA_ENA\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nCBD_DET_2 as CBD_ENA,\nIDATA_DET_2 as IDATA_ENA\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nCBD_DET_2 as CBD_ENA,\nIDATA_DET_2 as IDATA_ENA\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2898,9 +2898,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nCBD_DET_2 as CBD_ENA,\nIDATA_DET_2 as IDATA_ENA\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nCBD_DET_2 as CBD_ENA,\nIDATA_DET_2 as IDATA_ENA\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nCBD_DET_2 as CBD_ENA,\nIDATA_DET_2 as IDATA_ENA\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nCBD_DET_2 as CBD_ENA,\nIDATA_DET_2 as IDATA_ENA\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2980,9 +2980,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time\n-- BC_CNDH_0x10_BASEMEDIAN_2,\n-- BC_CNDH_0x28_IBIAS_LIM_2, \n-- BC_CNDH_0x3B_BASE_SELECT_2,\n-- BC_CNDH_0x3B_CONST_BASELN_2,\n-- BC_CNDH_0x42_PULS_LOWPASS_2,\n-- BC_CNDH_0x43_PHA_WIN_2,\n-- BC_CNDH_0x48_PEAK_THRSH\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time\n-- BC_CNDH_0x10_BASEMEDIAN_2,\n-- BC_CNDH_0x28_IBIAS_LIM_2, \n-- BC_CNDH_0x3B_BASE_SELECT_2,\n-- BC_CNDH_0x3B_CONST_BASELN_2,\n-- BC_CNDH_0x42_PULS_LOWPASS_2,\n-- BC_CNDH_0x43_PHA_WIN_2,\n-- BC_CNDH_0x48_PEAK_THRSH\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time\n-- BC_CNDH_0x10_BASEMEDIAN_2,\n-- BC_CNDH_0x28_IBIAS_LIM_2, \n-- BC_CNDH_0x3B_BASE_SELECT_2,\n-- BC_CNDH_0x3B_CONST_BASELN_2,\n-- BC_CNDH_0x42_PULS_LOWPASS_2,\n-- BC_CNDH_0x43_PHA_WIN_2,\n-- BC_CNDH_0x48_PEAK_THRSH\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time\n-- BC_CNDH_0x10_BASEMEDIAN_2,\n-- BC_CNDH_0x28_IBIAS_LIM_2, \n-- BC_CNDH_0x3B_BASE_SELECT_2,\n-- BC_CNDH_0x3B_CONST_BASELN_2,\n-- BC_CNDH_0x42_PULS_LOWPASS_2,\n-- BC_CNDH_0x43_PHA_WIN_2,\n-- BC_CNDH_0x48_PEAK_THRSH\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",

@@ -147,9 +147,9 @@
                   "type": "frser-sqlite-datasource",
                   "uid": "lmnopqrstuv"
                 },
-                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "queryType": "table",
-                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "refId": "A",
                 "timeColumns": [
                   "time",
@@ -262,9 +262,9 @@
                   "type": "frser-sqlite-datasource",
                   "uid": "lmnopqrstuv"
                 },
-                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "queryType": "table",
-                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_0 as AMP_EN, \n(BC_CNDH_0x10_BIAS_INHIBIT_0 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x10_RELAY_0 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_0) as RELAY_EN,\n(BC_CNDH_0x10_BPSU_0 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "refId": "A",
                 "timeColumns": [
                   "time",
@@ -366,9 +366,9 @@
                   "type": "frser-sqlite-datasource",
                   "uid": "lmnopqrstuv"
                 },
-                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN, \n(BC_CNDH_0x11_BIAS_INHIBIT_1 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x11_RELAY_1 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_1) as RELAY_EN,\n(BC_CNDH_0x11_BPSU_1 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN, \n(BC_CNDH_0x11_BIAS_INHIBIT_1 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x11_RELAY_1 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_1) as RELAY_EN,\n(BC_CNDH_0x11_BPSU_1 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "queryType": "table",
-                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN, \n(BC_CNDH_0x11_BIAS_INHIBIT_1 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x11_RELAY_1 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_1) as RELAY_EN,\n(BC_CNDH_0x11_BPSU_1 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN, \n(BC_CNDH_0x11_BIAS_INHIBIT_1 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x11_RELAY_1 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_1) as RELAY_EN,\n(BC_CNDH_0x11_BPSU_1 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "refId": "A",
                 "timeColumns": [
                   "time",
@@ -481,9 +481,9 @@
                   "type": "frser-sqlite-datasource",
                   "uid": "lmnopqrstuv"
                 },
-                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN, \n(BC_CNDH_0x11_BIAS_INHIBIT_1 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x11_RELAY_1 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_1) as RELAY_EN,\n(BC_CNDH_0x11_BPSU_1 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN, \n(BC_CNDH_0x11_BIAS_INHIBIT_1 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x11_RELAY_1 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_1) as RELAY_EN,\n(BC_CNDH_0x11_BPSU_1 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "queryType": "table",
-                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN, \n(BC_CNDH_0x11_BIAS_INHIBIT_1 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x11_RELAY_1 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_1) as RELAY_EN,\n(BC_CNDH_0x11_BPSU_1 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_1 as AMP_EN, \n(BC_CNDH_0x11_BIAS_INHIBIT_1 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x11_RELAY_1 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_1) as RELAY_EN,\n(BC_CNDH_0x11_BPSU_1 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "refId": "A",
                 "timeColumns": [
                   "time",
@@ -585,9 +585,9 @@
                   "type": "frser-sqlite-datasource",
                   "uid": "lmnopqrstuv"
                 },
-                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "queryType": "table",
-                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "refId": "A",
                 "timeColumns": [
                   "time",
@@ -700,9 +700,9 @@
                   "type": "frser-sqlite-datasource",
                   "uid": "lmnopqrstuv"
                 },
-                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "queryType": "table",
-                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_2 as AMP_EN, \n(BC_CNDH_0x12_BIAS_INHIBIT_2 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x12_RELAY_2 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_2) as RELAY_EN,\n(BC_CNDH_0x12_BPSU_2 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "refId": "A",
                 "timeColumns": [
                   "time",
@@ -804,9 +804,9 @@
                   "type": "frser-sqlite-datasource",
                   "uid": "lmnopqrstuv"
                 },
-                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN, \n(BC_CNDH_0x13_BIAS_INHIBIT_3 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x13_RELAY_3 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_3) as RELAY_EN,\n(BC_CNDH_0x13_BPSU_3 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN, \n(BC_CNDH_0x13_BIAS_INHIBIT_3 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x13_RELAY_3 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_3) as RELAY_EN,\n(BC_CNDH_0x13_BPSU_3 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "queryType": "table",
-                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN, \n(BC_CNDH_0x13_BIAS_INHIBIT_3 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x13_RELAY_3 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_3) as RELAY_EN,\n(BC_CNDH_0x13_BPSU_3 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN, \n(BC_CNDH_0x13_BIAS_INHIBIT_3 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x13_RELAY_3 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_3) as RELAY_EN,\n(BC_CNDH_0x13_BPSU_3 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "refId": "A",
                 "timeColumns": [
                   "time",
@@ -919,9 +919,9 @@
                   "type": "frser-sqlite-datasource",
                   "uid": "lmnopqrstuv"
                 },
-                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN, \n(BC_CNDH_0x13_BIAS_INHIBIT_3 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x13_RELAY_3 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_3) as RELAY_EN,\n(BC_CNDH_0x13_BPSU_3 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "queryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN, \n(BC_CNDH_0x13_BIAS_INHIBIT_3 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x13_RELAY_3 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_3) as RELAY_EN,\n(BC_CNDH_0x13_BPSU_3 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "queryType": "table",
-                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN, \n(BC_CNDH_0x13_BIAS_INHIBIT_3 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x13_RELAY_3 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_3) as RELAY_EN,\n(BC_CNDH_0x13_BPSU_3 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+                "rawQueryText": "SELECT\nTIME as time,\nBC_CNDH_0x20_IDAB_AMP_EN_3 as AMP_EN, \n(BC_CNDH_0x13_BIAS_INHIBIT_3 + 10) as BIAS_INHIBIT, \n(BC_CNDH_0x13_RELAY_3 + 20) as RELAY,\n(BC_CNDH_0x20_BIAS_RELAY_EN_3) as RELAY_EN,\n(BC_CNDH_0x13_BPSU_3 + 20) as BPSU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
                 "refId": "A",
                 "timeColumns": [
                   "time",
@@ -1014,9 +1014,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2\n\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2\n\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2\n\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2\n\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1082,9 +1082,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1167,9 +1167,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xB_TEMP_3 as TEMP_3,\nBC_CNDH_0xA_TEMP_2 as TEMP_2\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xB_TEMP_3 as TEMP_3,\nBC_CNDH_0xA_TEMP_2 as TEMP_2\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xB_TEMP_3 as TEMP_3,\nBC_CNDH_0xA_TEMP_2 as TEMP_2\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xB_TEMP_3 as TEMP_3,\nBC_CNDH_0xA_TEMP_2 as TEMP_2\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1235,9 +1235,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xA_TEMP_2 as TEMP_2,\nBC_CNDH_0xB_TEMP_3 as TEMP_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xA_TEMP_2 as TEMP_2,\nBC_CNDH_0xB_TEMP_3 as TEMP_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xA_TEMP_2 as TEMP_2,\nBC_CNDH_0xB_TEMP_3 as TEMP_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xA_TEMP_2 as TEMP_2,\nBC_CNDH_0xB_TEMP_3 as TEMP_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1320,9 +1320,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1388,9 +1388,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1487,9 +1487,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x0_VBIAS_0 as VBIAS_0,\nBC_CNDH_0x1_VBIAS_1 as VBIAS_1,\nBC_CNDH_0x2_VBIAS_2 as VBIAS_2,\nBC_CNDH_0x3_VBIAS_3 as VBIAS_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1585,9 +1585,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xA_TEMP_2 as TEMP_2,\nBC_CNDH_0xB_TEMP_3 as TEMP_3\n-- BC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xA_TEMP_2 as TEMP_2,\nBC_CNDH_0xB_TEMP_3 as TEMP_3\n-- BC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xA_TEMP_2 as TEMP_2,\nBC_CNDH_0xB_TEMP_3 as TEMP_3\n-- BC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x8_TEMP_0 as TEMP_0,\nBC_CNDH_0x9_TEMP_1 as TEMP_1,\nBC_CNDH_0xA_TEMP_2 as TEMP_2,\nBC_CNDH_0xB_TEMP_3 as TEMP_3\n-- BC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1699,9 +1699,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0xC_TEMP_IDPU_0 as TEMP_IDPU\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1771,9 +1771,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1000) as IBIAS_1,\nBC_CNDH_0x7_IBIAS_3 / (1000) as IBIAS_3,\nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS_2\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1) as IBIAS_1,\nBC_CNDH_0x7_IBIAS_3 / (1) as IBIAS_3,\nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS_2\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1000) as IBIAS_1,\nBC_CNDH_0x7_IBIAS_3 / (1000) as IBIAS_3,\nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS_2\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1) as IBIAS_1,\nBC_CNDH_0x7_IBIAS_3 / (1) as IBIAS_3,\nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS_2\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1839,9 +1839,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1000) as IBIAS_1,\nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS_2,\nBC_CNDH_0x7_IBIAS_3 / (1000) as IBIAS_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1) as IBIAS_1,\nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS_2,\nBC_CNDH_0x7_IBIAS_3 / (1) as IBIAS_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1000) as IBIAS_1,\nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS_2,\nBC_CNDH_0x7_IBIAS_3 / (1000) as IBIAS_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1) as IBIAS_1,\nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS_2,\nBC_CNDH_0x7_IBIAS_3 / (1) as IBIAS_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1908,9 +1908,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -1976,9 +1976,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2075,9 +2075,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1000) as IBIAS_1,\nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS_2,\nBC_CNDH_0x7_IBIAS_3 / (1000) as IBIAS_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1) as IBIAS_1,\nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS_2,\nBC_CNDH_0x7_IBIAS_3 / (1) as IBIAS_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1000) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1000) as IBIAS_1,\nBC_CNDH_0x6_IBIAS_2 / (1000) as IBIAS_2,\nBC_CNDH_0x7_IBIAS_3 / (1000) as IBIAS_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x4_IBIAS_0 / (1) as IBIAS_0,\nBC_CNDH_0x5_IBIAS_1 / (1) as IBIAS_1,\nBC_CNDH_0x6_IBIAS_2 / (1) as IBIAS_2,\nBC_CNDH_0x7_IBIAS_3 / (1) as IBIAS_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2173,9 +2173,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time, \nBC_CNDH_0x1B_PHOT_CNT_0 as PHOT_CNT_0,\nBC_CNDH_0x1C_PHOT_CNT_1 as PHOT_CNT_1,\nBC_CNDH_0x1D_PHOT_CNT_2 as PHOT_CNT_2,\nBC_CNDH_0x1E_PHOT_CNT_3 as PHOT_CNT_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2257,9 +2257,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nCBD_DET_0 as CBD_ENA_0,\nIDATA_DET_0 as IDATA_ENA_0,\nCBD_DET_1 as CBD_ENA_1,\nIDATA_DET_1 as IDATA_ENA_1,\nCBD_DET_2 as CBD_ENA_2,\nIDATA_DET_2 as IDATA_ENA_2,\nCBD_DET_3 as CBD_ENA_3,\nIDATA_DET_3 as IDATA_ENA_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nCBD_DET_0 as CBD_ENA_0,\nIDATA_DET_0 as IDATA_ENA_0,\nCBD_DET_1 as CBD_ENA_1,\nIDATA_DET_1 as IDATA_ENA_1,\nCBD_DET_2 as CBD_ENA_2,\nIDATA_DET_2 as IDATA_ENA_2,\nCBD_DET_3 as CBD_ENA_3,\nIDATA_DET_3 as IDATA_ENA_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nCBD_DET_0 as CBD_ENA_0,\nIDATA_DET_0 as IDATA_ENA_0,\nCBD_DET_1 as CBD_ENA_1,\nIDATA_DET_1 as IDATA_ENA_1,\nCBD_DET_2 as CBD_ENA_2,\nIDATA_DET_2 as IDATA_ENA_2,\nCBD_DET_3 as CBD_ENA_3,\nIDATA_DET_3 as IDATA_ENA_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nCBD_DET_0 as CBD_ENA_0,\nIDATA_DET_0 as IDATA_ENA_0,\nCBD_DET_1 as CBD_ENA_1,\nIDATA_DET_1 as IDATA_ENA_1,\nCBD_DET_2 as CBD_ENA_2,\nIDATA_DET_2 as IDATA_ENA_2,\nCBD_DET_3 as CBD_ENA_3,\nIDATA_DET_3 as IDATA_ENA_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
@@ -2353,9 +2353,9 @@
               "type": "frser-sqlite-datasource",
               "uid": "lmnopqrstuv"
             },
-            "queryText": "SELECT\nTIME as time,\nCBD_DET_0 as CBD_ENA_0,\nIDATA_DET_0 as IDATA_ENA_0,\nCBD_DET_1 as CBD_ENA_1,\nIDATA_DET_1 as IDATA_ENA_1,\nCBD_DET_2 as CBD_ENA_2,\nIDATA_DET_2 as IDATA_ENA_2,\nCBD_DET_3 as CBD_ENA_3,\nIDATA_DET_3 as IDATA_ENA_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "queryText": "SELECT\nTIME as time,\nCBD_DET_0 as CBD_ENA_0,\nIDATA_DET_0 as IDATA_ENA_0,\nCBD_DET_1 as CBD_ENA_1,\nIDATA_DET_1 as IDATA_ENA_1,\nCBD_DET_2 as CBD_ENA_2,\nIDATA_DET_2 as IDATA_ENA_2,\nCBD_DET_3 as CBD_ENA_3,\nIDATA_DET_3 as IDATA_ENA_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "queryType": "table",
-            "rawQueryText": "SELECT\nTIME as time,\nCBD_DET_0 as CBD_ENA_0,\nIDATA_DET_0 as IDATA_ENA_0,\nCBD_DET_1 as CBD_ENA_1,\nIDATA_DET_1 as IDATA_ENA_1,\nCBD_DET_2 as CBD_ENA_2,\nIDATA_DET_2 as IDATA_ENA_2,\nCBD_DET_3 as CBD_ENA_3,\nIDATA_DET_3 as IDATA_ENA_3\nfrom fast_ihk WHERE time BETWEEN ${__from:date:seconds} AND ${__to:date:seconds}",
+            "rawQueryText": "SELECT\nTIME as time,\nCBD_DET_0 as CBD_ENA_0,\nIDATA_DET_0 as IDATA_ENA_0,\nCBD_DET_1 as CBD_ENA_1,\nIDATA_DET_1 as IDATA_ENA_1,\nCBD_DET_2 as CBD_ENA_2,\nIDATA_DET_2 as IDATA_ENA_2,\nCBD_DET_3 as CBD_ENA_3,\nIDATA_DET_3 as IDATA_ENA_3\nfrom fast_ihk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
             "refId": "A",
             "timeColumns": [
               "time",
