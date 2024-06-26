@@ -6,7 +6,9 @@ BurstCube telemetry trending dashboard.
 - A reference database, placed in the repositoy's root directory.
 
 ## Starting the Dashboard
-- Set the environment variable `export BURSTCUBE_DATASOURCE=NAME_OF_YOUR_DATASOURCE.db`. Note that you are pointing to the **file** not the directory.  
+- Set the following environment variables. Note that you are pointing to the **file** not the parent directory.
+  - Instrument housekeeping database `export BURSTCUBE_DATASOURCE=NAME_OF_YOUR_IHK_DATABASE.db`
+  - Spacecraft housekeeping database `export BURSTCUBE_SCHK_DATASOURCE=NAME_OF_YOUR_SCHK_DATABASE.db`
 - Navigate to `$REPO` and execute `docker compose up`. 
 - Go to `http://localhost:3001`, username `user` password `1234`.
 - Open up one of the dashboards, you should see some empty plots. Play with the specified date range until you get to something sensible.
