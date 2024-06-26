@@ -7,7 +7,7 @@ deleteDatasources:
     orgId: 1
 
 datasources:
-- name: burstcube-test
+- name: burstcube-ihk
   uid: ${BURSTCUBE_DATASOURCE_UID}
   type: frser-sqlite-datasource
   typeLogoUrl: public/plugins/frser-sqlite-datasource/img/logo.svg
@@ -26,3 +26,23 @@ datasources:
     secureJsonFields: null
   version: 6
   readonly: false
+
+- name: burstcube-schk
+  uid: ${BURSTCUBE_SCHK_DATASOURCE_UID}
+  type: frser-sqlite-datasource
+  typeLogoUrl: public/plugins/frser-sqlite-datasource/img/logo.svg
+  access: proxy
+  url: 
+  user:
+  database:
+  basicAuth: false
+  basicAuthUser: ""
+  withCredentials: false
+  isDefault: false
+  jsonData:
+    attachLimit: 0
+    path: /burstcube/burstcube_schk_datasource.db
+    pathPrefix: "file:" 
+    secureJsonFields: null
+  version: 6
+  readonly: false  

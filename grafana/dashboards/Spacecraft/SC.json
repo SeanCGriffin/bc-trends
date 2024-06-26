@@ -1,0 +1,1171 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 16,
+    "links": [],
+    "panels": [
+      {
+        "collapsed": true,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 0
+        },
+        "id": 4,
+        "panels": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "palette-classic"
+                },
+                "custom": {
+                  "axisBorderShow": false,
+                  "axisCenteredZero": false,
+                  "axisColorMode": "text",
+                  "axisLabel": "",
+                  "axisPlacement": "auto",
+                  "barAlignment": 0,
+                  "drawStyle": "line",
+                  "fillOpacity": 0,
+                  "gradientMode": "none",
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineInterpolation": "linear",
+                  "lineWidth": 1,
+                  "pointSize": 5,
+                  "scaleDistribution": {
+                    "type": "linear"
+                  },
+                  "showPoints": "auto",
+                  "spanNulls": false,
+                  "stacking": {
+                    "group": "A",
+                    "mode": "none"
+                  },
+                  "thresholdsStyle": {
+                    "mode": "off"
+                  }
+                },
+                "mappings": [],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "red",
+                      "value": 80
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 1
+            },
+            "id": 1,
+            "options": {
+              "legend": {
+                "calcs": [],
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nRATE_EST_WBN_1,\nRATE_EST_WBN_2,\nRATE_EST_WBN_3\nfrom adcs_ad_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nRATE_EST_WBN_1,\nRATE_EST_WBN_2,\nRATE_EST_WBN_3\nfrom adcs_ad_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "RATE_EST_WBN",
+            "type": "timeseries"
+          }
+        ],
+        "title": "ACDS_DA_PKT",
+        "type": "row"
+      },
+      {
+        "collapsed": true,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 1
+        },
+        "id": 3,
+        "panels": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "palette-classic"
+                },
+                "custom": {
+                  "axisBorderShow": false,
+                  "axisCenteredZero": false,
+                  "axisColorMode": "text",
+                  "axisLabel": "",
+                  "axisPlacement": "auto",
+                  "barAlignment": 0,
+                  "drawStyle": "line",
+                  "fillOpacity": 0,
+                  "gradientMode": "none",
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineInterpolation": "linear",
+                  "lineWidth": 1,
+                  "pointSize": 5,
+                  "scaleDistribution": {
+                    "type": "linear"
+                  },
+                  "showPoints": "auto",
+                  "spanNulls": false,
+                  "stacking": {
+                    "group": "A",
+                    "mode": "none"
+                  },
+                  "thresholdsStyle": {
+                    "mode": "off"
+                  }
+                },
+                "mappings": [],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "red",
+                      "value": 80
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 2
+            },
+            "id": 6,
+            "options": {
+              "legend": {
+                "calcs": [],
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nBVB_1,\nBVB_2,\nBVB_3\nfrom adcs_di_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nBVB_1,\nBVB_2,\nBVB_3\nfrom adcs_di_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "BVB",
+            "type": "timeseries"
+          },
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "palette-classic"
+                },
+                "custom": {
+                  "axisBorderShow": false,
+                  "axisCenteredZero": false,
+                  "axisColorMode": "text",
+                  "axisLabel": "",
+                  "axisPlacement": "auto",
+                  "barAlignment": 0,
+                  "drawStyle": "line",
+                  "fillOpacity": 0,
+                  "gradientMode": "none",
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineInterpolation": "linear",
+                  "lineWidth": 1,
+                  "pointSize": 5,
+                  "scaleDistribution": {
+                    "type": "linear"
+                  },
+                  "showPoints": "auto",
+                  "spanNulls": false,
+                  "stacking": {
+                    "group": "A",
+                    "mode": "none"
+                  },
+                  "thresholdsStyle": {
+                    "mode": "off"
+                  }
+                },
+                "mappings": [],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "red",
+                      "value": 80
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 12,
+              "y": 2
+            },
+            "id": 2,
+            "options": {
+              "legend": {
+                "calcs": [],
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nBODY_MOMENTUM_1,\nBODY_MOMENTUM_2,\nBODY_MOMENTUM_3\nfrom adcs_di_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nBODY_MOMENTUM_1,\nBODY_MOMENTUM_2,\nBODY_MOMENTUM_3\nfrom adcs_di_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "BODY_MOMENTUM",
+            "type": "timeseries"
+          },
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "thresholds"
+                },
+                "custom": {
+                  "fillOpacity": 70,
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineWidth": 0,
+                  "spanNulls": false
+                },
+                "mappings": [
+                  {
+                    "options": {
+                      "0": {
+                        "color": "red",
+                        "index": 0,
+                        "text": "INVALID"
+                      },
+                      "1": {
+                        "color": "green",
+                        "index": 1,
+                        "text": "VALID"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 10
+            },
+            "id": 7,
+            "options": {
+              "alignValue": "left",
+              "legend": {
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "mergeValues": true,
+              "rowHeight": 0.9,
+              "showValue": "auto",
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nFSS_VALID_0,\nFSS_VALID_1\nfrom adcs_di_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nFSS_VALID_0,\nFSS_VALID_1\nfrom adcs_di_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "FSS_VALID",
+            "type": "state-timeline"
+          }
+        ],
+        "title": "ACDS_DI_PKT",
+        "type": "row"
+      },
+      {
+        "collapsed": true,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 2
+        },
+        "id": 8,
+        "panels": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "thresholds"
+                },
+                "custom": {
+                  "fillOpacity": 70,
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineWidth": 0,
+                  "spanNulls": false
+                },
+                "mappings": [
+                  {
+                    "options": {
+                      "0": {
+                        "color": "red",
+                        "index": 0,
+                        "text": "INVALID"
+                      },
+                      "1": {
+                        "color": "green",
+                        "index": 1,
+                        "text": "VALID"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 3
+            },
+            "id": 9,
+            "options": {
+              "alignValue": "left",
+              "legend": {
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "mergeValues": true,
+              "rowHeight": 0.9,
+              "showValue": "auto",
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nSVB_1,\nSVB_2,\nSVB_3\nfrom adcs_gnc_io_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nSVB_1,\nSVB_2,\nSVB_3\nfrom adcs_gnc_io_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "SVB",
+            "type": "state-timeline"
+          },
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "thresholds"
+                },
+                "custom": {
+                  "fillOpacity": 70,
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineWidth": 0,
+                  "spanNulls": false
+                },
+                "mappings": [
+                  {
+                    "options": {
+                      "0": {
+                        "color": "red",
+                        "index": 0,
+                        "text": "INVALID"
+                      },
+                      "1": {
+                        "color": "green",
+                        "index": 1,
+                        "text": "VALID"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 11
+            },
+            "id": 10,
+            "options": {
+              "alignValue": "left",
+              "legend": {
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "mergeValues": true,
+              "rowHeight": 0.9,
+              "showValue": "auto",
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nMODE\nfrom adcs_gnc_io_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nMODE\nfrom adcs_gnc_io_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "MODE",
+            "type": "state-timeline"
+          }
+        ],
+        "title": "ADCS_GNC_IO_PKT ",
+        "type": "row"
+      },
+      {
+        "collapsed": true,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 3
+        },
+        "id": 12,
+        "panels": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "thresholds"
+                },
+                "custom": {
+                  "fillOpacity": 70,
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineWidth": 0,
+                  "spanNulls": false
+                },
+                "mappings": [
+                  {
+                    "options": {
+                      "0": {
+                        "color": "red",
+                        "index": 0,
+                        "text": "INVALID"
+                      },
+                      "1": {
+                        "color": "green",
+                        "index": 1,
+                        "text": "VALID"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 4
+            },
+            "id": 11,
+            "options": {
+              "alignValue": "left",
+              "legend": {
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "mergeValues": true,
+              "rowHeight": 0.9,
+              "showValue": "auto",
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nSBCR\nfrom cubic_config_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nSBCR\nfrom cubic_config_pkt WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "SBCR",
+            "type": "state-timeline"
+          }
+        ],
+        "title": "CUBIC_CONFIG_PKT",
+        "type": "row"
+      },
+      {
+        "collapsed": false,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 4
+        },
+        "id": 19,
+        "panels": [],
+        "title": "GNSS200_ACPKT",
+        "type": "row"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "wxyzABCDEFG"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "fillOpacity": 70,
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineWidth": 0,
+              "spanNulls": false
+            },
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "red",
+                    "index": 0,
+                    "text": "INVALID"
+                  },
+                  "1": {
+                    "color": "green",
+                    "index": 1,
+                    "text": "VALID"
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 5
+        },
+        "id": 20,
+        "options": {
+          "alignValue": "left",
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "queryText": "SELECT\nTIME as time, \nfix_quality\nfrom GNSS200_ACPKT WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+            "queryType": "table",
+            "rawQueryText": "SELECT\nTIME as time, \nfix_quality\nfrom GNSS200_ACPKT WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "FIX_QUALITY",
+        "type": "state-timeline"
+      },
+      {
+        "collapsed": true,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 13
+        },
+        "id": 16,
+        "panels": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "description": "",
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "thresholds"
+                },
+                "custom": {
+                  "fillOpacity": 70,
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineWidth": 0,
+                  "spanNulls": false
+                },
+                "mappings": [
+                  {
+                    "options": {
+                      "0": {
+                        "color": "red",
+                        "index": 0,
+                        "text": "INVALID"
+                      },
+                      "1": {
+                        "color": "green",
+                        "index": 1,
+                        "text": "VALID"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 6
+            },
+            "id": 13,
+            "options": {
+              "alignValue": "left",
+              "legend": {
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "mergeValues": true,
+              "rowHeight": 0.9,
+              "showValue": "auto",
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nReboot_Counter\nfrom vulcan_radio_hk_tlm_t WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nReboot_Counter\nfrom vulcan_radio_hk_tlm_t WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "Reboot Counter",
+            "type": "state-timeline"
+          }
+        ],
+        "title": "VULCAN_RADIO_HK_TLM_T ",
+        "type": "row"
+      },
+      {
+        "collapsed": true,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 14
+        },
+        "id": 17,
+        "panels": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "thresholds"
+                },
+                "custom": {
+                  "fillOpacity": 70,
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineWidth": 0,
+                  "spanNulls": false
+                },
+                "mappings": [
+                  {
+                    "options": {
+                      "0": {
+                        "color": "red",
+                        "index": 0,
+                        "text": "INVALID"
+                      },
+                      "1": {
+                        "color": "green",
+                        "index": 1,
+                        "text": "VALID"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 7
+            },
+            "id": 15,
+            "options": {
+              "alignValue": "left",
+              "legend": {
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "mergeValues": true,
+              "rowHeight": 0.9,
+              "showValue": "auto",
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nSTORED_MODE\nfrom LEO_BUS_HK_TLM_T  WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nSTORED_MODE\nfrom LEO_BUS_HK_TLM_T  WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "STORED_MODE",
+            "type": "state-timeline"
+          }
+        ],
+        "title": "LEO_BUS",
+        "type": "row"
+      },
+      {
+        "collapsed": true,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 15
+        },
+        "id": 18,
+        "panels": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "wxyzABCDEFG"
+            },
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "thresholds"
+                },
+                "custom": {
+                  "fillOpacity": 70,
+                  "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                  },
+                  "insertNulls": false,
+                  "lineWidth": 0,
+                  "spanNulls": false
+                },
+                "mappings": [
+                  {
+                    "options": {
+                      "0": {
+                        "color": "red",
+                        "index": 0,
+                        "text": "INVALID"
+                      },
+                      "1": {
+                        "color": "green",
+                        "index": 1,
+                        "text": "VALID"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 8
+            },
+            "id": 14,
+            "options": {
+              "alignValue": "left",
+              "legend": {
+                "displayMode": "list",
+                "placement": "bottom",
+                "showLegend": true
+              },
+              "mergeValues": true,
+              "rowHeight": 0.9,
+              "showValue": "auto",
+              "tooltip": {
+                "mode": "single",
+                "sort": "none"
+              }
+            },
+            "targets": [
+              {
+                "datasource": {
+                  "type": "frser-sqlite-datasource",
+                  "uid": "wxyzABCDEFG"
+                },
+                "queryText": "SELECT\nTIME as time, \nTRQ_0_ENABLED,\nTRQ_1_ENABLED,\nTRQ_2_ENABLED\nfrom trq_hk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "queryType": "table",
+                "rawQueryText": "SELECT\nTIME as time, \nTRQ_0_ENABLED,\nTRQ_1_ENABLED,\nTRQ_2_ENABLED\nfrom trq_hk WHERE time BETWEEN (${__from:date:seconds}-86400) AND (${__to:date:seconds}+86400)\n\n",
+                "refId": "A",
+                "timeColumns": [
+                  "time",
+                  "ts"
+                ]
+              }
+            ],
+            "title": "TRQ_ENABLED",
+            "type": "state-timeline"
+          }
+        ],
+        "title": "TRQ_HK",
+        "type": "row"
+      }
+    ],
+    "schemaVersion": 39,
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "browser",
+    "title": "SC",
+    "uid": null,
+    "version": 3,
+    "weekStart": ""
+  }
